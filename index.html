@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLICON</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="/img/Icon.svg" type="image/x-icon">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="black" id="blackfriday">
+      <div class="Containblack">
+        <div class="BlackFr">
+          <div class="yellow">
+            <p>Black</p>
+          </div>
+          <p>Friday</p>
+        </div>
+        <div class="Sale">
+          <p>Up to</p>
+          <p>59%</p>
+          <p>OFF</p>
+        </div>
+        <a href="#" class="shopnow buttonn">
+          <p>SHOP NOW</p>
+          <img src="/img/ArrowRight.svg" alt="row" />
+        </a>
+      </div>
+      <button class="btnx" onclick="hideDiv('blackfriday',this)"> <img src="/img/X.svg" alt=""></button>
+    </div>
+    <div class="aboutUs align-items-center">
+      <div class="aboutInfo">
+        <p>
+          Welcome to Clicon online eCommerce store.
+        </p>
+        <div class="socAndEng">
+          <div class="socialMedia">
+            <p>Follow us:</p>
+            <a href="#"><img src="/img/Twitter.svg" alt=""></a>
+            <a href="https://facebook.com"><img src="/img/Facebook.svg" alt=""></a>
+            <a href="https://ru.pinterest.com"><img src="/img/Pinterest.svg" alt=""></a>
+            <a href="https://reddit.com"><img src="/img/Reddit.svg" alt=""></a>
+            <a href="https://youtube.com"><img src="/img/Youtube.svg" alt=""></a>
+            <a href="https://instagram.com"><img src="/img/" alt=""></a>
+          </div>
+          <div class="line">
+
+          </div>
+          <!--<button class="btn2" id="btn2" onclick="toggleDropdown()">
+            Eng
+            <img src="/img/CaretDown.svg" alt="" id="arrow" class="">
+          </button>
+          <div class="dropdown" id="dropdown">
+            <a href="#" class="">
+              
+              <p>Eng</p>
+            </a>
+            <a href="#"class="">
+              
+              <p>Russian</p>
+            </a>
+            <a href="#"class="">
+              <img src="" alt="">
+              <p>French</p>
+            </a>
+           
+          </div>
+        -->
+          <div class="dropdownx">
+            <button class="dropbtn" id="btn2" onclick="myFunction('myDropdown')">
+              <p id="namebut">
+                Eng
+              </p>
+              <img src="/img/CaretDown.svg" alt="" id="arrow" class="">
+
+            </button>
+
+            <div class="dropdownb" id="myDropdown">
+              <a class="checkdrop" href="#create" id="eng" onclick="englike()">
+                <img src="/img/Ellipse 10.svg" alt="">
+                English
+
+                <img src="/img/Vector.svg" alt="" id="englike" class="imagelike">
+              </a>
+              <a class="checkdrop" href="#draft" id="man" onclick="manlike()">
+                <img src="/img/man.png" alt="">
+                Mandarin
+
+                <img src="/img/Vector.svg" alt="" id="manlike" class="imagelike">
+              </a>
+              <a class="checkdrop" href="#move" id="ru" onclick="rulike()">
+                <img src="/img/ru.svg" alt="">
+                Russian
+                <img src="/img/Vector.svg" alt="" id="rulike" class="imagelike">
+              </a>
+
+            </div>
+          </div>
+
+
+          <div class="dropdownusd">
+            <button class="dropbtn2" id="btnusd" onclick="myFunction('myDropdown2')">
+              <p id="namebut2">
+                USD
+              </p>
+              <img src="/img/CaretDown.svg" alt="" id="arrow" class="">
+
+            </button>
+            <div class="dropdown2" id="myDropdown2">
+              <a class="checkdrop2" href="#create" id="usd" onclick="usd()">
+
+                Dollar (USD)
+
+                <img src="/img/Vector.svg" alt="" id="usdlike" class="imagelike">
+              </a>
+              <a class="checkdrop2" href="#draft" id="eur" onclick="eur()">
+
+                Euro (EUR)
+
+                <img src="/img/Vector.svg" alt="" id="eurlike" class="imagelike">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainone d-flex w-100 justify-content-center">
+      <div class="mainheader align-items-center">
+        <div class="logo">
+          <img src="/img/Icon.svg" alt="iconclickon">
+          <h2>CLICON</h2>
+        </div>
+        <div class="searchdiv">
+          <input class="search" type="text" id="searcher" placeholder="Search for anything..." name="searcher">
+          <a href="#">
+            <img src="/img/MagnifyingGlass.svg" alt="">
+          </a>
+
+        </div>
+
+        <div class="action">
+          <div class="wastebasket" onmouseover="hoverplace(document.getElementById('place'))"
+            onmouseout="unhoverplace(document.getElementById('place'))" onclick="myFunction('shopcart')">
+            <img id="place" src="/img/place.svg" alt="">
+            <img src="/img/krap.svg " alt="">
+            <img src="/img/krap.svg" alt="">
+            <div class="circle">
+              <p>
+                2
+              </p>
+            </div>
+            <div class="shopcart" id="shopcart">
+              <div class="namezagol">
+                <p>Shopping Cart (02)</p>
+              </div>
+
+              <div class="purchases">
+                <div class="purch" id="p1">
+                  <img src="/img/camera.png" alt="camera" class="camera">
+                  <div class="descpurch">
+                    <p>Canon EOS 1500D DSLR Camera Body+ 18-55 mm</p>
+                    <div class="costpurch">
+                      <p>1 x</p>
+                      <p>$1,500</p>
+                    </div>
+                  </div>
+                  <div><button class="delete" onclick="hideDiv('p1', this)"><img src="/img/X.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#"><img id="my-img" src="/img/Heart.svg" onmouseover="hover(this);" onmouseout="unhover(this);"
+              alt="favourite"></a>
+          <a href="#"><img src="/img/User.svg" onmouseover="hoverprof(this);" onmouseout="unhoverprof(this);"
+              alt="profile "></a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <div class="navigation">
+    <nav class="container">
+      <div class="navbut">
+        <div class="allCat">
+          <button class="drpdwn" id="btndr" onclick="myFunction('cat')">
+            All Category
+            <div id="caret" class="defimage"></div>
+          </button>
+          <div class="dropdowncateg" id="cat">
+            <a href="#" id="a1" onmouseover="hovercat(a1)" onmouseout="unhovercat(a1)">Computer & Laptop
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Computer Accessories
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">SmartPhone
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Headphone
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Mobile Accessories
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Gaming Console
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Camera & Photo
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">TV & Homes Accessories
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Watchs & Accessories
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">GPS & Navigation
+              <img src="" alt="">
+            </a>
+            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Warable Technology
+              <img src="" alt="">
+            </a>
+          </div>
+        </div>
+        <a class="nav_item" href="#">
+          <img src="/img/MapPinLine.svg" alt="">
+          <p>Track Order</p>
+        </a>
+        <a class="nav_item" href="#">
+          <img src="/img/ArrowsCounterClockwise.svg" alt="">
+          <p>Compare</p>
+        </a>
+        <a class="nav_item" href="#">
+          <img src="/img/Headphones.svg" alt="">
+          <p> Customer Support</p>
+        </a>
+        <a class="nav_item" href="#">
+          <img src="/img/Info.svg" alt="">
+          <p>Need Help</p>
+        </a>
+
+      </div>
+      <div class="phonenum align-items-center d-flex">
+        <img src="/img/phone.svg" alt="">
+        <p> +1-202-555-0104</p>
+      </div>
+    </nav>
+  </div>
+
+  <section class="fsc container d-flex justify-content-center align-items-center">
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide align-items-center">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+
+          <div class="inflex justify-content-start">
+            <div class="carousel_text ">
+              <div class="car_about d-flex align-items-center">
+                <div class="mline">
+
+                </div>
+                THE BEST PLACE TO PLAY
+              </div>
+              <h3>Xbox Consoles</h3>
+              <p style="margin-bottom: 24px;">Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2
+                USD.</p>
+              <a href="#" class="shopnowm align-items-center">
+                <p>SHOP NOW</p>
+                <img src="/img/ArrowRigthWhite.svg" alt="row" />
+              </a>
+            </div>
+            <img src="img/Image.png" class="d-block w-100" alt="...">
+          </div>
+
+
+
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+
+          <div class="inflex justify-content-start">
+            <div class="carousel_text ">
+              <div class="car_about d-flex align-items-center">
+                <div class="mline">
+
+                </div>
+                THE BEST PLACE TO PLAY
+              </div>
+              <h3>Xbox Consoles</h3>
+              <p style="margin-bottom: 24px;">Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2
+                USD.</p>
+              <a href="#" class="shopnowm align-items-center">
+                <p>SHOP NOW</p>
+                <img src="/img/ArrowRigthWhite.svg" alt="row" />
+              </a>
+            </div>
+            <img src="img/xbox11.png" class="d-block w-70" style="width: 40% !important;" alt="...">
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="inflex justify-content-start">
+            <div class="carousel_text ">
+              <div class="car_about d-flex align-items-center">
+                <div class="mline">
+
+                </div>
+                THE BEST PLACE TO PLAY
+              </div>
+              <h3>Play Station Consoles</h3>
+              <p style="margin-bottom: 24px;">Save up to 40% on select Play Station games. Get 3 months of PC Game Pass
+                for $2 USD.</p>
+              <a href="#" class="shopnowm align-items-center">
+                <p>SHOP NOW</p>
+                <img src="/img/ArrowRigthWhite.svg" alt="row" />
+              </a>
+            </div>
+            <img src="img/ps5.png" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="widgets d-flex flex-column">
+      <div class="widget d-flex align-items-center justify-content-start">
+        <div class="textwidget">
+          <p class="sales">SUMMER SALES</p>
+          <h5>
+            New Google Pixel 6 Pro
+          </h5>
+          <a href="#" class="shopnowm align-items-center buttonn" style="max-width: 118px;">
+            <p>SHOP NOW</p>
+            <img src="/img/ArrowRigthWhite.svg" alt="row" />
+          </a>
+        </div>
+        <img class="imgabs w-50" src="/img/image 5.png" alt="googlepixel">
+        <div class="sale d-flex align-items-center">
+          <p> 29% OFF</p>
+        </div>
+      </div>
+      <div class="widget d-flex align-items-center justify-content-between">
+        <img class="imgabs w-50" src="/img/image 4.png" alt="googlepixel">
+        <div class="textwidget">
+
+          <h5>
+            Xiaomi FlipBuds Pro
+          </h5>
+          <p>$299 USD</p>
+          <a href="#" class="shopnowm align-items-center buttonn" style="max-width: 118px;">
+            <p>SHOP NOW</p>
+            <img src="/img/ArrowRigthWhite.svg" alt="row" />
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <section class="deskclic container align-items-center">
+    <div class="cardsdesk w-100 d-flex justify-content-between align-items-center">
+
+      <div class="carddesk d-flex align-tems-center">
+        <img src="/img/Package.svg" alt="delivery">
+        <div class="textdesk">
+          <h6>
+            FASTED DELIVERY
+          </h6>
+          <p>
+            Delivery in 24/H
+          </p>
+        </div>
+      </div>
+      <div class="cardline">
+
+      </div>
+      <div class="carddesk d-flex align-tems-center">
+        <img src="/img/Trophy.svg" alt="delivery">
+        <div class="textdesk">
+          <h6>
+            24 HOURS RETURN
+          </h6>
+          <p>
+            100% money-back guarantee
+          </p>
+        </div>
+      </div>
+      <div class="cardline">
+
+      </div>
+      <div class="carddesk d-flex align-tems-center">
+        <img src="/img/CreditCard.svg" alt="delivery">
+        <div class="textdesk">
+          <h6>
+            SECURE PAYMENT
+          </h6>
+          <p>
+            Your money is safe
+          </p>
+        </div>
+      </div>
+      <div class="cardline">
+
+      </div>
+      <div class="carddesk d-flex align-tems-center">
+        <img src="/img/HeadphonesD.svg" alt="delivery">
+        <div class="textdesk">
+          <h6>
+            SUPPORT 24/7
+          </h6>
+          <p>
+            Live contect/message
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="bestDeals container flex-column">
+    <div class="announce d-flex justify-content-between">
+      <div class="announceoffer d-flex align-items-center justify-content-between w-100">
+        <h5>
+          Best Deals
+        </h5>
+        <p>
+          Deals ends in
+        </p>
+        <div class="timer d-flex align-items-center">
+          <p>16d</p>
+          <p class="crapk">:</p>
+          <p>21h</p>
+          <p class="crapk">:</p>
+          <p>57m</p>
+          <p class="crapk">:</p>
+          <p>23s</p>
+        </div>
+
+
+      </div>
+      <a href="#" class="browse d-flex aligh-items-center">
+        <p>
+          Browse All Product
+        </p>
+        <img src="/img/bluearrow.svg" alt="">
+      </a>
+    </div>
+    <div class="deals d-flex">
+      <div class="bDeal d-flex flex-column justify-content-start aligh-items-center">
+
+        <img src="/img/d4864b5bf82a65669ff6c6b965655324.png" class="w-70" alt="">
+        <div class="stars d-flex justify-content-between">
+          <img src="/img/star.svg" alt="">
+          <img src="/img/star.svg" alt="">
+          <img src="/img/star.svg" alt="">
+          <img src="/img/star.svg" alt="">
+          <img src="/img/star.svg" alt="">
+          <p>(52,677)</p>
+        </div>
+        <div class="deskriptbestdeal">
+          <h4>
+            Xbox Series S - 512GB SSD Console with Wireless Controller - EU Versio...
+          </h4>
+          <div class="bprice d-flex">
+            <p>$865.99</p>
+            <p>$442.12</p>
+          </div>
+          <p class="deskpurchaseb">Games built using the Xbox Series X|S development kit showcase unparalleled load
+            times, visuals.</p>
+        </div>
+        <a href="#" class="buttonsadd d-flex w-100 aligh-items-center flex-column justify-content-center">
+          <div class="buttonsblock d-flex justify-content-between aligh-items-center w-100">
+            <button class="minibutton aligh-items-center buttonn"
+              onmouseover="hoveradd(this, document.getElementById('imgh'), '/img/blackheartFill.svg','background-color: var(--primary-500, #FA8232);');"
+              onmouseout="hoveradd(this, document.getElementById('imgh'), '/img/blackheart.svg' , 'background: var(--primary-100, #FFE7D6);');">
+              <img src="/img/blackheart.svg" alt="add to favourite" id="imgh">
+            </button>
+            <button class="addToCart aligh-items-center buttonn"
+              onmouseover="hoveradd(this, document.getElementById('imgh3'), '/img/wastebaddFill.svg','background-color: var(--primary-500, #FA8232); color: white;');"
+              onmouseout="hoveradd(this, document.getElementById('imgh3'), '/img/wastebadd.svg' , 'background: var(--primary-100, #FFE7D6); color: black;');">
+
+              <img src="/img/wastebadd.svg" alt="add to cart" id="imgh3">
+              <p>ADD TO CART</p>
+            </button>
+            <button class="minibutton aligh-items-center buttonn"
+              onmouseover="hoveradd(this, document.getElementById('imgh2'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+              onmouseout="hoveradd(this, document.getElementById('imgh2'), '/img/eye.svg' , 'background: var(--primary-100, #FFE7D6);');">
+
+
+              <img src="/img/eye.svg" alt="saw" id="imgh2">
+            </button>
+          </div>
+
+        </a>
+        <div class="off">
+          <p>32% OFF</p>
+        </div>
+        <div class="hot">
+          <p>HOT</p>
+        </div>
+      </div>
+      <div class="bDeals">
+        <div class="row">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 minicard" id="" onmouseover="show(this)"
+            onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/Image (3).png" alt="drone">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p>
+              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+            </p>
+            <div class="sold">
+              <p>SOLD OUT</p>
+            </div>
+            <p>$2,300</p>
+
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 minicard" id="" onmouseover="show(this)"
+            onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/samsu.png" alt="phone">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p>
+              Simple Mobile 4G LTE Prepaid Smartphone OLED
+            </p>
+            <p>$220</p>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 minicard" id="" onmouseover="show(this)"
+            onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/gamepad.png" alt="gamepad">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="off">
+              <p>19% OFF</p>
+            </div>
+            <p>
+              4K UHD LED Smart TV with Chromecast Built-in Gamepads
+            </p>
+            <div class="wsale">
+              <p>$865</p>
+              <p>$1,50</p>
+            </div>
+
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 minicard" id="" onmouseover="show(this)"
+            onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/headpnoe.png" alt="drone">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p>
+              Sony DSCHX8 High Zoom Point & Shoot Camera & Microphone
+            </p>
+            <p>$1,200</p>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 minicard" id="" onmouseover="show(this)"
+            onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/dell.png" alt="drone">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p>
+              Dell Optiplex 7000x7480 All-in-One Computer Monitor
+            </p>
+            <p>$299</p>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 minicard" id="" onmouseover="show(this)"
+            onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/drone.png" alt="drone">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p>
+              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+            </p>
+            <div class="wsale">
+              <p>$865.99</p>
+              <p>$70</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 minicard" id="" onmouseover="show(this)"
+            onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/apple.png" alt="drone">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p>
+              2-Barrel Carburetor Carb 2100 Engine Increase Horsepower
+            </p>
+            <p>$160</p>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 minicard" id="" onmouseover="show(this)"
+            onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/camerasource.png" alt="drone">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p>
+              JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black
+            </p>
+            <div class="off">
+              <p>32% OFF</p>
+            </div>
+            <div class="wsale">
+              <p>$865.99</p>
+              <p>$70</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="shopcategory container d-flex flex-column">
+    <h2>
+      Shop with Categorys
+    </h2>
+    <div class="rowcat d-flex justify-content-between w-100 position-relative">
+      <div class="cardcat d-flex justify-content-center flex-column aligh-items-center ">
+        <div class="imgcat d-flex aligh-items-center justify-content-center">
+          <img src="/img/macbook.png" alt="">
+        </div>
+
+        <h4>Computer & Laptop</h4>
+        <button class="slidec left">
+          <img src="/img/arrow-left.svg" alt="">
+        </button>
+      </div>
+      <div class="cardcat d-flex justify-content-center flex-column aligh-items-center ">
+        <div class="imgcat d-flex aligh-items-center justify-content-center">
+          <img src="/img/phonecatlayer.png" alt="">
+        </div>
+
+        <h4>Smart Phone</h4>
+      </div>
+      <div class="cardcat d-flex justify-content-center flex-column aligh-items-center" id="headphones">
+        <div class="imgcat d-flex aligh-items-center justify-content-center">
+          <img src="/img/headphonescat.png" alt="">
+        </div>
+
+        <h4>Headphones</h4>
+      </div>
+      <div class="cardcat d-flex justify-content-center flex-column aligh-items-center  " id="keyb">
+        <div class="imgcat d-flex aligh-items-center justify-content-center">
+          <img src="/img/kardcatkey.png" alt="">
+        </div>
+
+        <h4>Accessories</h4>
+      </div>
+      <div class="cardcat d-flex justify-content-center flex-column aligh-items-center " id="access">
+        <div class="imgcat d-flex aligh-items-center justify-content-center">
+          <img src="/img/cameracateg.png" alt="">
+        </div>
+
+        <h4>Camera & Photo</h4>
+      </div>
+      <div class="cardcat d-flex justify-content-center flex-column aligh-items-center" id="tv">
+        <div class="imgcat d-flex aligh-items-center justify-content-center">
+          <img src="/img/tvcats.png" alt="">
+        </div>
+        <h4>TV & Homes</h4>
+
+      </div>
+      <button class="slidec right">
+        <img src="/img/arrow-right.svg" alt="">
+      </button>
+    </div>
+  </section>
+  
+ 
+  <section class="featuredProd container">
+    <div class="offer d-flex flex-column  ">
+      <div class="textoffer">
+        <p>
+          COMPUTER & ACCESSORIES
+        </p>
+        <h5 class="aligh-items-center">
+          32% Discount
+        </h5>
+        <p>
+          For all ellectronics products
+        </p>
+      </div>
+      <div class="endoffer d-flex aligh-items-center">
+        <p>
+          Offers ends in:
+        </p>
+        <div class="ends">
+          <p>
+            ENDS OF CHRISTMAS
+          </p>
+        </div>
+      </div>
+      <a href="#" class="shopnowm align-items-center shopofferfeqatured">
+        <p>SHOP NOW</p>
+        <img src="/img/ArrowRigthWhite.svg" alt="row" />
+      </a>
+      <img src="/img/featured.jpg" alt="">
+    </div>
+    <div class="feat d-flex  aligh-items-center flex-column">
+      
+
+      <div class="navfeat d-flex aligh-items-center">
+        <h5>
+          Featured Products
+        </h5>
+        <div class="navfeatnav d-flex">
+          <div class="navfeatbuts d-flex">
+            <button class="navfeatbut">
+              All Product
+            </button>
+            <button class="navfeatbut">
+              Smart Phone
+            </button>
+            <button class="navfeatbut">
+              Laptop
+            </button>
+            <button class="navfeatbut">
+              TV
+            </button>
+          </div>
+          <a href="#" class="browse-all d-flex aligh-items-center justidy-content-center "><p class="aligh-items-center">Browse All Product</p><img src="/img/rightarroworange.svg" alt=""></a>
+        </div>
+        
+      </div>
+      <div class="row d-flex justify-content-between featcards ">
+        <!--карточка-->
+  <div class="card_fav col-3">
+    <img src="/img/favphone.png" alt="">
+    <div class="text_fav">
+      <div class="rate_fav d-flex align-items-center">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <p>
+          (536)
+        </p>
+      </div>
+      <h6>
+        Samsung Electronics Samsung Galexy S21 5G
+      </h6>
+      <p>$2,300</p>
+    </div>
+  </div>
+  <div class="card_fav col-3">
+    <img src="/img/favphone.png" alt="">
+    <div class="text_fav">
+      <div class="rate_fav d-flex align-items-center">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <p>
+          (536)
+        </p>
+      </div>
+      <h6>
+        Samsung Electronics Samsung Galexy S21 5G
+      </h6>
+      <p>$2,300</p>
+    </div>
+  </div>
+  <div class="card_fav col-4">
+    <img src="/img/favphone.png" alt="">
+    <div class="text_fav">
+      <div class="rate_fav d-flex align-items-center">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <p>
+          (536)
+        </p>
+      </div>
+      <h6>
+        Samsung Electronics Samsung Galexy S21 5G
+      </h6>
+      <p>$2,300</p>
+    </div>
+  </div>
+  <div class="card_fav col-4">
+    <img src="/img/favphone.png" alt="">
+    <div class="text_fav">
+      <div class="rate_fav d-flex align-items-center">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <p>
+          (536)
+        </p>
+      </div>
+      <h6>
+        Samsung Electronics Samsung Galexy S21 5G
+      </h6>
+      <p>$2,300</p>
+    </div>
+  </div><div class="card_fav col-4">
+    <img src="/img/favphone.png" alt="">
+    <div class="text_fav">
+      <div class="rate_fav d-flex align-items-center">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <p>
+          (536)
+        </p>
+      </div>
+      <h6>
+        Samsung Electronics Samsung Galexy S21 5G
+      </h6>
+      <p>$2,300</p>
+    </div>
+  </div><div class="card_fav col-4">
+    <img src="/img/favphone.png" alt="">
+    <div class="text_fav">
+      <div class="rate_fav d-flex align-items-center">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <img src="/img/orangeStar.svg" alt="">
+        <p>
+          (536)
+        </p>
+      </div>
+      <h6>
+        Samsung Electronics Samsung Galexy S21 5G
+      </h6>
+      <p>$2,300</p>
+    </div>
+  </div>
+
+  <!--карточка-->
+      </div>
+    </div>
+  </section>
+  <section class="container promotion d-flex justify-content-between">
+    <div class="first_prom">
+      <div class="prom leftp d-flex aligh-items-center justify-content-between" >
+        <div class="leftpartprom">
+          <div class="int">
+            INTRODUCTION
+          </div>
+          <h5>New Apple Homepod Mini</h5>
+          <p class="promp">
+            Jam-packed with innovation, HomePod mini delivers unexpectedly.
+          </p>
+          <a href="#" class="shopnowm align-items-center buttonn" style="max-width: 118px;">
+            <p>SHOP NOW</p>
+            <img src="/img/ArrowRigthWhite.svg" alt="row" />
+          </a>
+        </div>
+        <img src="/img/image 6.png" alt="homepod" class="cardimg">
+
+      </div>
+
+    </div>
+    <div class="first_prom">
+      <div class="prom leftp d-flex aligh-items-center justify-content-between" >
+        <div class="leftpartprom">
+          <div class="int">
+            INTRODUCTION
+          </div>
+          <h5>New Apple Homepod Mini</h5>
+          <p class="promp">
+            Jam-packed with innovation, HomePod mini delivers unexpectedly.
+          </p>
+          <a href="#" class="shopnowm align-items-center buttonn" style="max-width: 118px;">
+            <p>SHOP NOW</p>
+            <img src="/img/ArrowRigthWhite.svg" alt="row" />
+          </a>
+        </div>
+        <img src="/img/image 6.png" alt="homepod" class="cardimg">
+
+      </div>
+
+    </div>
+
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
