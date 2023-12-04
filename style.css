@@ -1490,7 +1490,6 @@ h4 {
   /* 125% */
 }
 
-.rowcat {}
 
 .cardcat {
   text-align: center;
@@ -1769,8 +1768,13 @@ h5 {
   line-height: 20px;
   max-width: 141px;
 
-  padding-left: 6px 12px;
+  padding: 6px 12px;
   text-align: center;
+}
+
+.widesale .int {
+  max-width: 165px;
+  margin-bottom: 12px;
 }
 
 .prom {
@@ -1824,6 +1828,162 @@ h5 {
   width: 100%;
 }
 
+.rigtp {
+  border-radius: 4px;
+  background: var(--gray-900, #191C1F);
+}
+
+.intr {
+  border-radius: 2px;
+  background: var(--warning-400, #EFD33D);
+  color: var(--gray-900, #191C1F);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.rip {
+  color: var(--gray-00, #FFF) !important;
+}
+
+.rip2 {
+  color: var(--gray-300, #ADB7BC);
+}
+
+.cardimg {
+  bottom: 0px;
+  right: 0px;
+}
+
+.ppp {
+  max-height: 349px;
+  width: 100%;
+}
+
+.circlesale {
+  border-radius: 1000px;
+  background: var(--secondary-500, #2DA5F3);
+  padding: 30px 18px;
+  align-items: flex-start;
+  z-index: 3;
+  color: var(--gray-00, #FFF);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.widesale {
+  background: var(--primary-100, #FFE7D6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.widesale .shopnowm {
+  max-width: 191px !important;
+  width: 100%;
+}
+
+.promwide {
+  max-width: 1010px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.widesalecircle {
+  border-radius: 1000px;
+  border: 6px solid var(--gray-00, #FFF);
+  background: var(--primary-200, #FFCEAD);
+  display: inline-flex;
+  padding: 41px 24px 41px 25px;
+  align-items: flex-start;
+  top: 0px;
+  left: 0px;
+  color: var(--gray-900, #191C1F);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.catdeals {
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.catdeal h4 {
+  font-weight: 600 !important;
+  margin-bottom: 16px;
+}
+
+.catdeal {}
+
+.dealcont {
+  padding: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: start;
+}
+
+.catdealcont {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid var(--gray-100, #E4E7E9);
+  background: var(--gray-00, #FFF);
+}
+
+.catdealcont img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.catdeals .row {
+  width: 100% !important;
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
+.dealcont p {
+  color: var(--secondary-500, #2DA5F3);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.catdeal .catdealcont:nth-child(3) {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.catdeal {
+  margin-top: 10px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.news {
+  background: var(--gray-50, #F2F4F5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.news h2 {
+  color: var(--gray-900, #191C1F);
+}
 
 @media (max-width: 1308px) {
   .checkdrop2 {
@@ -1905,3 +2065,5 @@ h5 {
   }
 
 }
+
+@media (max-width:1039px) {}
