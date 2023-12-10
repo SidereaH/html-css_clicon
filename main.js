@@ -1,10 +1,10 @@
-const firstdrop = document.getElementById('myDropDown')
+/*const firstdrop = document.getElementById('myDropDown')
 const seconddrop = document.getElementById('myDropDown2')
 const thirddrop = document.getElementById('shopcart')
 const fourthdrop = document.getElementById('cat')
 
 document.getElementById('manlike')
-document.getElementById('manlike')
+document.getElementById('manlike')*/
 ///сердечко избранных
 function hover(element) {
 
@@ -33,7 +33,12 @@ function unhoverprof(element) {
 function hoverb(element, img) {
     element.setAttribute('src', img );
 }
-
+function hovershopitog(whatch, img) {
+    whatch.setAttribute('src', img)
+}
+function hovershopitogoff(whatch, img) {
+    whatch.setAttribute('src', img)
+}
 function hoveradd (button, element, img , color){
     button.setAttribute('style', color,)
     button.firstElementChild.setAttribute('src', img)
@@ -55,6 +60,7 @@ $('#btndr').click(function () {
 });
 function myFunction(div) {
     document.getElementById(div).classList.toggle("show");
+    /*
     document.getElementById('manlike').classList.remove('like');
     document.getElementById('englike').classList.remove('like');
     document.getElementById('rulike').classList.remove('like');
@@ -83,6 +89,7 @@ function myFunction(div) {
         seconddrop.classList.remove('show')
         thirddrop.classList.remove('show')
     }
+    */
 
 }
 function myFunctionCat(div) {
@@ -219,3 +226,14 @@ $(function() {
       }
     });
    });
+   
+   $('body').on('click', '.password-control', function(){
+	if ($('#password-input').attr('type') == 'password'){
+		$(this).addClass('view');
+		$('#password-input').attr('type', 'text');
+	} else {
+		$(this).removeClass('view');
+		$('#password-input').attr('type', 'password');
+	}
+	return false;
+});

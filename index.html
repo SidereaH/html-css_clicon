@@ -163,7 +163,10 @@
             </div>
             <div class="shopcart" id="shopcart">
               <div class="namezagol">
-                <p>Shopping Cart (02)</p>
+                <div class="nametext">
+                  <p>Shopping Cart </p>
+                  <p>(02)</p>
+                </div>
               </div>
 
               <div class="purchases">
@@ -180,12 +183,92 @@
                   </div>
                 </div>
               </div>
+              <div class="purchases">
+                <div class="purch" id="p2">
+                  <img src="/img/Image (5).png" alt="headphone" class="camera">
+                  <div class="descpurch">
+                    <p>Simple Mobile 5G LTE Galexy 12 Mini 512GB Gaming Phone</p>
+                    <div class="costpurch">
+                      <p>2 x</p>
+                      <p>$269</p>
+                    </div>
+                  </div>
+                  <div><button class="delete" onclick="hideDiv('p2', this)"><img src="/img/X.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="itogo">
+                <div class="itogoprice d-flex justify-content-between w-100">
+                  <p>Sub-Total</p>
+                  <p>$2038.00 USD</p>
+                </div>
+                <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
+                  onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
+                  onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
+
+                  CHECKOUT NOW
+
+                  <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
+                </button>
+                <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
+                  View cart
+                </button>
+              </div>
             </div>
           </div>
-          <a href="#"><img id="my-img" src="/img/Heart.svg" onmouseover="hover(this);" onmouseout="unhover(this);"
-              alt="favourite"></a>
-          <a href="#"><img src="/img/User.svg" onmouseover="hoverprof(this);" onmouseout="unhoverprof(this);"
-              alt="profile "></a>
+          <button><img id="my-img" src="/img/Heart.svg" onmouseover="hover(this);" onmouseout="unhover(this);"
+              alt="favourite"></button>
+          <div class="authoriz position-relative">
+            <button onclick="myFunction('log')"><img src="/img/User.svg" onmouseover="hoverprof(this);" onmouseout="unhoverprof(this);"
+                alt="profile "></button>
+                
+              <div class="logIn" id="log">
+                <h3>
+                  Sign in to your account
+                </h3>
+                <div class="logpass w-100 d-flex flex-column">
+                  <p>
+                    Email Address
+                  </p>
+                  <div class="polelogpass w-100 align-items-center d-flex justify-content-center">
+                    <input class="w-100" type="text" id="searcher" placeholder="" name="searcher">
+                  </div>
+                  <div class="pass d-flex w-100 justify-content-between">
+                    <p>
+                      Password
+                    </p>
+                    <a href="#">
+                      Forget Password
+                    </a>
+                  </div>
+                  <div class="polelogpass  w-100 d-flex passwordl">
+                    <input class="w-100" type="password" id="password-input" placeholder="" name="password">
+                      <img src="/img/eyepass.svg" href="#" class="password-control">
+                  </div>
+                  <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
+                  onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
+                  onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
+
+                  LOG IN
+
+                  <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
+                </button>
+                <div class="answaccount d-flex justify-content-between align-items-center">
+                  <div class="lnansw">
+                  </div>
+                  <p>
+                    Don’t have account
+                  </p>
+                  <div class="lnansw">
+                  </div>
+                </div>
+                <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
+                  Create account
+                </button>
+                </div>
+              </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -1236,43 +1319,67 @@
         Latest News
       </h2>
       <div class="lastnews d-flex justify-content-between align-items-center w-100">
-        <div class="new" >
+        <div class="new">
           <img src="/img/unsplash_iZVrfElG1t0.png" alt="">
           <div class="newdes d-flex align-items-center justify-content-between">
-            <div class="people align-items-center d-flex justidy-content-center"><img src="/img/UserCircle.svg" alt=""> <p>Kristin</p></div>
-            <div class="datepostal align-items-center d-flex justidy-content-center"><img src="/img/CalendarBlank.svg" alt=""> <p>9 May, 2014</p></div>
-            <div class="comm align-items-center d-flex justidy-content-center"><img src="/img/comm.svg" alt=""><p>826</p></div>
+            <div class="people align-items-center d-flex justidy-content-center"><img src="/img/UserCircle.svg" alt="">
+              <p>Kristin</p>
+            </div>
+            <div class="datepostal align-items-center d-flex justidy-content-center"><img src="/img/CalendarBlank.svg"
+                alt="">
+              <p>9 May, 2014</p>
+            </div>
+            <div class="comm align-items-center d-flex justidy-content-center"><img src="/img/comm.svg" alt="">
+              <p>826</p>
+            </div>
           </div>
           <h6>Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.</h6>
-          <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus posuere metus.</p>
+          <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus
+            posuere metus.</p>
           <button class="readmore d-flex aligh-items-center">
             <p>READ MORE</p>
             <img src="/img/arrrrr.svg" alt="">
           </button>
         </div>
-        <div class="new" >
+        <div class="new">
           <img src="/img/unsplash_iZVrfElG1t0.png" alt="">
           <div class="newdes d-flex align-items-center justify-content-between">
-            <div class="people align-items-center d-flex justidy-content-center"><img src="/img/UserCircle.svg" alt=""> <p>Kristin</p></div>
-            <div class="datepostal align-items-center d-flex justidy-content-center"><img src="/img/CalendarBlank.svg" alt=""> <p>9 May, 2014</p></div>
-            <div class="comm align-items-center d-flex justidy-content-center"><img src="/img/comm.svg" alt=""><p>826</p></div>
+            <div class="people align-items-center d-flex justidy-content-center"><img src="/img/UserCircle.svg" alt="">
+              <p>Kristin</p>
+            </div>
+            <div class="datepostal align-items-center d-flex justidy-content-center"><img src="/img/CalendarBlank.svg"
+                alt="">
+              <p>9 May, 2014</p>
+            </div>
+            <div class="comm align-items-center d-flex justidy-content-center"><img src="/img/comm.svg" alt="">
+              <p>826</p>
+            </div>
           </div>
           <h6>Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.</h6>
-          <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus posuere metus.</p>
+          <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus
+            posuere metus.</p>
           <button class="readmore d-flex aligh-items-center">
             <p>READ MORE</p>
             <img src="/img/arrrrr.svg" alt="">
           </button>
         </div>
-        <div class="new" >
+        <div class="new">
           <img src="/img/unsplash_iZVrfElG1t0.png" alt="">
           <div class="newdes d-flex align-items-center justify-content-between">
-            <div class="people align-items-center d-flex justidy-content-center"><img src="/img/UserCircle.svg" alt=""> <p>Kristin</p></div>
-            <div class="datepostal align-items-center d-flex justidy-content-center"><img src="/img/CalendarBlank.svg" alt=""> <p>9 May, 2014</p></div>
-            <div class="comm align-items-center d-flex justidy-content-center"><img src="/img/comm.svg" alt=""><p>826</p></div>
+            <div class="people align-items-center d-flex justidy-content-center"><img src="/img/UserCircle.svg" alt="">
+              <p>Kristin</p>
+            </div>
+            <div class="datepostal align-items-center d-flex justidy-content-center"><img src="/img/CalendarBlank.svg"
+                alt="">
+              <p>9 May, 2014</p>
+            </div>
+            <div class="comm align-items-center d-flex justidy-content-center"><img src="/img/comm.svg" alt="">
+              <p>826</p>
+            </div>
           </div>
           <h6>Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.</h6>
-          <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus posuere metus.</p>
+          <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus
+            posuere metus.</p>
           <button class="readmore d-flex aligh-items-center">
             <p>READ MORE</p>
             <img src="/img/arrrrr.svg" alt="">
@@ -1329,49 +1436,43 @@
         <h4>
           TOP CATEGORY
         </h4>
-        <a href="" class="accessoriesd align-items-center">
-          <div class="accline">
-
+        <a href="" class="accessoriesd align-items-center" onmouseover="show(this)" onmouseout="unshow(this)">
+          <div class="accline" style="visibility: hidden;">
           </div>
           <h6>
             Computer & Laptop
           </h6>
         </a>
-        <a href="" class="accessoriesd align-items-center">
-          <div class="accline">
-
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
           </div>
           <h6>
             SmartPhone
           </h6>
         </a>
-        <a href="" class="accessoriesd align-items-center">
-          <div class="accline">
-
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
           </div>
           <h6>
             Headphone
           </h6>
         </a>
-
-        <a href="" class="accessoriesd align-items-center">
-          <div class="accline">
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
           </div>
           <h6>
             Accessories
           </h6>
         </a>
-        <a href="" class="accessoriesd align-items-center">
-          <div class="accline">
-
+        <a href="" class="accessoriesd align-items-center " onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
           </div>
           <h6>
             Camera & Photo
           </h6>
         </a>
-        <a href="" class="accessoriesd align-items-center">
-          <div class="accline">
-
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
           </div>
           <h6>
             TV & Homes
@@ -1383,15 +1484,192 @@
         </a>
       </div>
       <div class="column">
-
+        <h4>
+          QUICK LINKS
+        </h4>
+        <a href="" class="accessoriesd align-items-center" onmouseover="show(this)" onmouseout="unshow(this)">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Shop Product
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Shopping Cart
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+            Wishlist
+          </div>
+          <h6>
+            Compare
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Track Order
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center " onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Customer Help
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            About Us
+          </h6>
+        </a>
       </div>
-      <div class="column">
-
+      <div class="column downd">
+        <h4>DOWNLOAD APP</h4>
+        <button class="download d-flex">
+          <img src="/img/Icon=google-play 1.svg" alt="">
+          <div class="downloadtext">
+            <p>
+              Get it now
+            </p>
+            <h6>
+              Google Play
+            </h6>
+          </div>
+        </button>
+        <button class="download  d-flex">
+          <img src="/img/Apple---Negative 1.svg" alt="">
+          <div class="downloadtext d-flex flex-column">
+            <p>
+              Get it now
+            </p>
+            <h6>
+              Apple Store
+            </h6>
+          </div>
+        </button>
       </div>
-      <div class="column">
-
+      <!--
+          <div class="column d-flex justidy-content-start flex-column">
+        <h4>Popular Tag</h4>
+        <div class="poprow row d-flex justify-content-between">
+          <div class="col-3">
+            <div class="popcol">
+              <p>
+                Game
+              </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="popcol">
+              <p>
+                Iphone
+              </p>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="popcol">
+              <p>
+                TV
+              </p>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="popcol">
+              <p>
+                Asus Laptops
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+      -->
 
+      <div class="column d-flex justidy-content-start flex-column">
+        <h4>Popular Tag</h4>
+        <div class="poprowd-flex justify-content-start d-flex flex-wrap ">
+
+          <button class="popcol">
+            <p>
+              Game
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              Iphone
+            </p>
+          </button>
+
+
+          <button class="popcol">
+            <p>
+              TV
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              Asus Laptops
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              Macbook
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              SSD
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              Graphics Card
+            </p>
+
+            <button class="popcol">
+              <p>
+                Power Bank
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Smart TV
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Speaker
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Tablet
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Microwave
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Samsung
+              </p>
+            </button>
+        </div>
+      </div>
+    </div>
+    <div class="allrights">
+      <h6>
+        Kinbo - eCommerce Template © 2021. Design by Templatecookie
+      </h6>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
