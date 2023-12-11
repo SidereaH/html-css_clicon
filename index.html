@@ -137,7 +137,7 @@
       </div>
     </div>
     <div class="mainone d-flex w-100 justify-content-center">
-      <div class="mainheader align-items-center flex-column">
+      <div class="mainheader align-items-center flex-column position-relative">
         <div class="d-flex w-100 justify-content-between">
           <div class="logo">
             <img src="/img/Icon.svg" alt="iconclickon">
@@ -149,8 +149,13 @@
               <img src="/img/MagnifyingGlass.svg" alt="">
             </a>
           </div>
-  
-          <div class="action">
+
+          <div class="menu-btn2" onclick="myFunction('action')">
+            <div class="menu-btn__burger2">
+            </div>
+          </div>
+
+          <div class="action" id="action">
             <div class="wastebasket" onmouseover="hoverplace(document.getElementById('place'))"
               onmouseout="unhoverplace(document.getElementById('place'))" onclick="myFunction('shopcart')">
               <img id="place" src="/img/place.svg" alt="">
@@ -284,78 +289,79 @@
 
   </header>
   <div class="navigation">
-    <nav class="container">
-      <div class="navbut">
+    <nav class="container position-relative">
+      <div class="menu-btn" onclick="myFunction('hidenav')">
+        <div class="menu-btn__burger">
 
-        <div class="menu-btn">
-          <div class="menu-btn__burger">
-
-          </div>
         </div>
-
-        <div class="allCat">
-          <button class="drpdwn" id="btndr" onclick="myFunction('cat')">
-            All Category
-            <div id="caret" class="defimage"></div>
-          </button>
-          <div class="dropdowncateg" id="cat">
-            <a href="#" id="a1" onmouseover="hovercat(a1)" onmouseout="unhovercat(a1)">Computer & Laptop
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Computer Accessories
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">SmartPhone
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Headphone
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Mobile Accessories
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Gaming Console
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Camera & Photo
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">TV & Homes Accessories
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Watchs & Accessories
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">GPS & Navigation
-              <img src="" alt="">
-            </a>
-            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Warable Technology
-              <img src="" alt="">
-            </a>
+      </div>
+      <div class="hidenav d-flex justify-content-between " id="hidenav" >
+        <div class="navbut ">
+          <div class="allCat">
+            <button class="drpdwn" id="btndr" onclick="myFunction('cat')">
+              All Category
+              <div id="caret" class="defimage"></div>
+            </button>
+            <div class="dropdowncateg" id="cat">
+              <a href="#" id="a1" onmouseover="hovercat(a1)" onmouseout="unhovercat(a1)">Computer & Laptop
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Computer Accessories
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">SmartPhone
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Headphone
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Mobile Accessories
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Gaming Console
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Camera & Photo
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">TV & Homes Accessories
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Watchs & Accessories
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">GPS & Navigation
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Warable Technology
+                <img src="" alt="">
+              </a>
+            </div>
           </div>
+          <a class="nav_item" href="#">
+            <img src="/img/MapPinLine.svg" alt="">
+            <p>Track Order</p>
+          </a>
+          <a class="nav_item" href="#">
+            <img src="/img/ArrowsCounterClockwise.svg" alt="">
+            <p>Compare</p>
+          </a>
+          <a class="nav_item" href="#">
+            <img src="/img/Headphones.svg" alt="">
+            <p> Customer Support</p>
+          </a>
+          <a class="nav_item" href="#">
+            <img src="/img/Info.svg" alt="">
+            <p>Need Help</p>
+          </a>
+  
         </div>
-        <a class="nav_item" href="#">
-          <img src="/img/MapPinLine.svg" alt="">
-          <p>Track Order</p>
-        </a>
-        <a class="nav_item" href="#">
-          <img src="/img/ArrowsCounterClockwise.svg" alt="">
-          <p>Compare</p>
-        </a>
-        <a class="nav_item" href="#">
-          <img src="/img/Headphones.svg" alt="">
-          <p> Customer Support</p>
-        </a>
-        <a class="nav_item" href="#">
-          <img src="/img/Info.svg" alt="">
-          <p>Need Help</p>
-        </a>
-
-      </div>
-      <div class="phonenum align-items-center d-flex">
-        <img src="/img/phone.svg" alt="">
-        <p> +1-202-555-0104</p>
-      </div>
+        <div class="phonenum align-items-center d-flex">
+          <img src="/img/phone.svg" alt="">
+          <p> +1-202-555-0104</p>
+        </div>
+      </div >
+      
     </nav>
   </div>
 
@@ -1094,7 +1100,7 @@
       </div>
       <div class="row d-flex justify-content-between featcards ">
         <!--карточка-->
-        <div class="col-6 col-lg-4">
+        <div class="col-12 col-sm-6 col-lg-4">
           <div class="card_fav">
             <img src="/img/favphone.png" alt="">
             <div class="text_fav">
@@ -1115,7 +1121,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-12 col-sm-6 col-lg-4">
           <div class="card_fav">
             <img src="/img/favphone.png" alt="">
             <div class="text_fav">
@@ -1136,7 +1142,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-12 col-sm-6 col-lg-4">
           <div class="card_fav">
             <img src="/img/favphone.png" alt="">
             <div class="text_fav">
@@ -1157,7 +1163,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-12 col-sm-6 col-lg-4">
           <div class="card_fav">
             <img src="/img/favphone.png" alt="">
             <div class="text_fav">
@@ -1178,7 +1184,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-12 col-sm-6 col-lg-4">
           <div class="card_fav">
             <img src="/img/favphone.png" alt="">
             <div class="text_fav">
@@ -1199,7 +1205,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-12 col-sm-6 col-lg-4">
           <div class="card_fav">
             <img src="/img/favphone.png" alt="">
             <div class="text_fav">
@@ -1275,6 +1281,12 @@
             SAVE UP TO $200.00
           </div>
           <h3>Macbook Pro</h3>
+          <div class="wideimg position-relative hidewide">
+            <img src="/img/macbookw.png" alt="macbook" class=" ">
+            <div class="widesalecircle position-absolute">
+              $1999
+            </div>
+          </div>
           <p class="promp">
             Apple M1 Max Chip. 32GB Unified Memory, 1TB SSD Storage
           </p>
@@ -1283,7 +1295,7 @@
             <img src="/img/ArrowRigthWhite.svg" alt="row" />
           </a>
         </div>
-        <div class="wideimg position-relative ">
+        <div class="wideimg position-relative widedef">
           <img src="/img/macbookw.png" alt="macbook" class=" ">
           <div class="widesalecircle position-absolute">
             $1999

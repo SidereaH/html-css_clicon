@@ -249,3 +249,14 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+const menuBtn2 = document.querySelector('.menu-btn2');
+let menuOpen2 = false;
+menuBtn2.addEventListener('click', () => {
+    if(!menuOpen2) {
+        menuBtn2.classList.add('open');
+        menuOpen2 = true;
+    } else {
+        menuBtn2.classList.remove('open');
+        menuOpen2 = false;
+    }
+});
