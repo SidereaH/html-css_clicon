@@ -2496,6 +2496,69 @@ footer .accessoriesd:hover {
   visibility: hidden;
   display: none !important; 
 }
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  display: none;
+  visibility: hidden;
+
+}
+.menu-btn.show {
+  display: flex;
+}
+.menu-btn__burger {
+  width: 30px;
+  height: 3px;
+  background-color: var(--secondary-700, #1b6392);
+  border-radius: 5px;
+  
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: var(--secondary-700, #1b6392);
+  border-radius: 5px;
+
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: var(--secondary-700, #1b6392);
+  border-radius: 5px;
+
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-10px);
+}
+.menu-btn__burger::after {
+  transform: translateY(10px);
+}
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
 @media (max-width: 1308px) {
   .checkdrop2 {
     width: 133px;
