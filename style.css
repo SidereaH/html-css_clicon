@@ -384,7 +384,6 @@ a {
 
 .dropdownusd {
   position: relative;
-  z-index: 11;
 }
 
 .bx {
@@ -1212,6 +1211,7 @@ h5 {
   padding-left: 5px;
   padding-right: 5px;
   margin-right: 11px;
+  max-height: 592px;
 }
 
 .stars {
@@ -2481,7 +2481,14 @@ footer .accessoriesd:hover {
   font-weight: 400;
   line-height: 20px;
 }
-
+.bDeals .row>* {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.bDeals .row{
+  max-width: 823px;
+  width: 100%;
+}
 @media (max-width: 1308px) {
   .checkdrop2 {
     width: 133px;
@@ -2583,4 +2590,24 @@ footer .accessoriesd:hover {
   .new {
     margin-top: 24px;
   }
+}
+@media (max-width:1120px) {
+  .deals {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bDeals {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+@media(max-width:767.20px) {
+  .bDeals .row{
+    max-width: 433px;
+    width: 100%;
+  }
+}
+@media (max-width:1033px) {
+  
 }
