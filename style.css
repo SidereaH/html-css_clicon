@@ -146,6 +146,7 @@ header {
   text-align: center;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .Containblack {
@@ -252,7 +253,6 @@ header {
   align-items: center;
   position: absolute;
   text-align: center;
-  top: 24px;
   right: 24px;
   transition: all 0.3s;
 }
@@ -1628,8 +1628,7 @@ h4 {
 .offer .shopnowm {
   max-width: 191px;
   width: 100%;
-  margin-left: 4px;
-  margin-right: 4px;
+  margin: 0 auto;
 }
 
 .textoffer p:first-child {
@@ -2489,6 +2488,14 @@ footer .accessoriesd:hover {
   max-width: 823px;
   width: 100%;
 }
+.adaptationhide {
+  visibility: hidden !important;
+  display: none;
+}
+.hiddenimage {
+  visibility: hidden;
+  display: none !important; 
+}
 @media (max-width: 1308px) {
   .checkdrop2 {
     width: 133px;
@@ -2601,6 +2608,9 @@ footer .accessoriesd:hover {
     justify-content: center;
     margin-top: 10px;
   }
+  .bDeal {
+    margin-right: 0px !important;
+  }
 }
 @media(max-width:767.20px) {
   .bDeals .row{
@@ -2609,5 +2619,121 @@ footer .accessoriesd:hover {
   }
 }
 @media (max-width:1033px) {
+  .featuredProd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .offer {
+    margin-bottom: 72px;
+  }
+  .feat .row>*{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 718px) {
+  .aboutInfo {
+    flex-direction: column !important;
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+  .aboutUs {
+    height: 100% !important;
+  }
+}
+@media (max-width:857px) {
+  .adaptationhide{
+    display: block !important;
+    visibility: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-top: 20px;
+  }
+  .adaptationhide .search {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .mainsearch {
+    display: none !important;
+    visibility: hidden !important;
+  }
   
+}
+@media (max-width: 550px) {
+  .Containblack {
+    flex-direction: column;
+  }
+  .Containblack>* {
+    margin-top: 10px ;
+  }
+  .black {
+    height: 100% !important;
+  }
+  .Containblack .shopnow {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 620px) {
+  .widgets{
+    flex-direction: column !important;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 729px) {
+  .inflex {
+    flex-direction: column !important;
+    height: 100%;
+    justify-content: start;
+  }
+  .hiddenimage {
+    visibility: visible !important;
+    display: block !important;
+    margin: 0 auto;
+  }
+  .defimagee {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .carousel {
+    height: 608px;
+  }
+  .carousel_text  {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .carousel-indicators {
+    right: -1px !important;
+    bottom: 10px !important;
+  }
+  .carousel .shophowm {
+    margin: 0 auto
+  }
+  .carousel h3 {
+    margin-top: 15px;
+  }
+}
+@media(max-width:576px){
+  .carousel {
+    height: 550px;
+  }
+}
+@media(max-width:510px){
+  .carousel {
+    height: 510px;
+  }
+}
+@media(max-width:412px){
+  .carousel {
+    height: 540px;
+  }
 }

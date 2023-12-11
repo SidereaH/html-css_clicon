@@ -137,139 +137,148 @@
       </div>
     </div>
     <div class="mainone d-flex w-100 justify-content-center">
-      <div class="mainheader align-items-center">
-        <div class="logo">
-          <img src="/img/Icon.svg" alt="iconclickon">
-          <h2>CLICON</h2>
+      <div class="mainheader align-items-center flex-column">
+        <div class="d-flex w-100 justify-content-between">
+          <div class="logo">
+            <img src="/img/Icon.svg" alt="iconclickon">
+            <h2>CLICON</h2>
+          </div>
+          <div class="searchdiv mainsearch">
+            <input class="search" type="text" id="searcher" placeholder="Search for anything..." name="searcher">
+            <a href="#">
+              <img src="/img/MagnifyingGlass.svg" alt="">
+            </a>
+          </div>
+  
+          <div class="action">
+            <div class="wastebasket" onmouseover="hoverplace(document.getElementById('place'))"
+              onmouseout="unhoverplace(document.getElementById('place'))" onclick="myFunction('shopcart')">
+              <img id="place" src="/img/place.svg" alt="">
+              <img src="/img/krap.svg " alt="">
+              <img src="/img/krap.svg" alt="">
+              <div class="circle">
+                <p>
+                  2
+                </p>
+              </div>
+              <div class="shopcart" id="shopcart">
+                <div class="namezagol">
+                  <div class="nametext">
+                    <p>Shopping Cart </p>
+                    <p>(02)</p>
+                  </div>
+                </div>
+  
+                <div class="purchases">
+                  <div class="purch" id="p1">
+                    <img src="/img/camera.png" alt="camera" class="camera">
+                    <div class="descpurch">
+                      <p>Canon EOS 1500D DSLR Camera Body+ 18-55 mm</p>
+                      <div class="costpurch">
+                        <p>1 x</p>
+                        <p>$1,500</p>
+                      </div>
+                    </div>
+                    <div><button class="delete" onclick="hideDiv('p1', this)"><img src="/img/X.svg" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="purchases">
+                  <div class="purch" id="p2">
+                    <img src="/img/Image (5).png" alt="headphone" class="camera">
+                    <div class="descpurch">
+                      <p>Simple Mobile 5G LTE Galexy 12 Mini 512GB Gaming Phone</p>
+                      <div class="costpurch">
+                        <p>2 x</p>
+                        <p>$269</p>
+                      </div>
+                    </div>
+                    <div><button class="delete" onclick="hideDiv('p2', this)"><img src="/img/X.svg" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="itogo">
+                  <div class="itogoprice d-flex justify-content-between w-100">
+                    <p>Sub-Total</p>
+                    <p>$2038.00 USD</p>
+                  </div>
+                  <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
+                    onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
+                    onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
+  
+                    CHECKOUT NOW
+  
+                    <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
+                  </button>
+                  <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
+                    View cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button><img id="my-img" src="/img/Heart.svg" onmouseover="hover(this);" onmouseout="unhover(this);"
+                alt="favourite"></button>
+            <div class="authoriz position-relative">
+              <button onclick="myFunction('log')"><img src="/img/User.svg" onmouseover="hoverprof(this);"
+                  onmouseout="unhoverprof(this);" alt="profile "></button>
+  
+              <div class="logIn" id="log">
+                <h3>
+                  Sign in to your account
+                </h3>
+                <div class="logpass w-100 d-flex flex-column">
+                  <p>
+                    Email Address
+                  </p>
+                  <div class="polelogpass w-100 align-items-center d-flex justify-content-center">
+                    <input class="w-100" type="text" id="searcher" placeholder="" name="searcher">
+                  </div>
+                  <div class="pass d-flex w-100 justify-content-between">
+                    <p>
+                      Password
+                    </p>
+                    <a href="#">
+                      Forget Password
+                    </a>
+                  </div>
+                  <div class="polelogpass  w-100 d-flex passwordl">
+                    <input class="w-100" type="password" id="password-input" placeholder="" name="password">
+                    <img src="/img/eyepass.svg" href="#" class="password-control">
+                  </div>
+                  <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
+                    onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
+                    onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
+  
+                    LOG IN
+  
+                    <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
+                  </button>
+                  <div class="answaccount d-flex justify-content-between align-items-center">
+                    <div class="lnansw">
+                    </div>
+                    <p>
+                      Don’t have account
+                    </p>
+                    <div class="lnansw">
+                    </div>
+                  </div>
+                  <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
+                    Create account
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+          </div>
         </div>
-        <div class="searchdiv">
+
+        <div class="searchdiv adaptationhide">
           <input class="search" type="text" id="searcher" placeholder="Search for anything..." name="searcher">
           <a href="#">
             <img src="/img/MagnifyingGlass.svg" alt="">
           </a>
-
         </div>
-
-        <div class="action">
-          <div class="wastebasket" onmouseover="hoverplace(document.getElementById('place'))"
-            onmouseout="unhoverplace(document.getElementById('place'))" onclick="myFunction('shopcart')">
-            <img id="place" src="/img/place.svg" alt="">
-            <img src="/img/krap.svg " alt="">
-            <img src="/img/krap.svg" alt="">
-            <div class="circle">
-              <p>
-                2
-              </p>
-            </div>
-            <div class="shopcart" id="shopcart">
-              <div class="namezagol">
-                <div class="nametext">
-                  <p>Shopping Cart </p>
-                  <p>(02)</p>
-                </div>
-              </div>
-
-              <div class="purchases">
-                <div class="purch" id="p1">
-                  <img src="/img/camera.png" alt="camera" class="camera">
-                  <div class="descpurch">
-                    <p>Canon EOS 1500D DSLR Camera Body+ 18-55 mm</p>
-                    <div class="costpurch">
-                      <p>1 x</p>
-                      <p>$1,500</p>
-                    </div>
-                  </div>
-                  <div><button class="delete" onclick="hideDiv('p1', this)"><img src="/img/X.svg" alt=""></button>
-                  </div>
-                </div>
-              </div>
-              <div class="purchases">
-                <div class="purch" id="p2">
-                  <img src="/img/Image (5).png" alt="headphone" class="camera">
-                  <div class="descpurch">
-                    <p>Simple Mobile 5G LTE Galexy 12 Mini 512GB Gaming Phone</p>
-                    <div class="costpurch">
-                      <p>2 x</p>
-                      <p>$269</p>
-                    </div>
-                  </div>
-                  <div><button class="delete" onclick="hideDiv('p2', this)"><img src="/img/X.svg" alt=""></button>
-                  </div>
-                </div>
-              </div>
-              <div class="itogo">
-                <div class="itogoprice d-flex justify-content-between w-100">
-                  <p>Sub-Total</p>
-                  <p>$2038.00 USD</p>
-                </div>
-                <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
-                  onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
-                  onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
-
-                  CHECKOUT NOW
-
-                  <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
-                </button>
-                <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
-                  View cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <button><img id="my-img" src="/img/Heart.svg" onmouseover="hover(this);" onmouseout="unhover(this);"
-              alt="favourite"></button>
-          <div class="authoriz position-relative">
-            <button onclick="myFunction('log')"><img src="/img/User.svg" onmouseover="hoverprof(this);"
-                onmouseout="unhoverprof(this);" alt="profile "></button>
-
-            <div class="logIn" id="log">
-              <h3>
-                Sign in to your account
-              </h3>
-              <div class="logpass w-100 d-flex flex-column">
-                <p>
-                  Email Address
-                </p>
-                <div class="polelogpass w-100 align-items-center d-flex justify-content-center">
-                  <input class="w-100" type="text" id="searcher" placeholder="" name="searcher">
-                </div>
-                <div class="pass d-flex w-100 justify-content-between">
-                  <p>
-                    Password
-                  </p>
-                  <a href="#">
-                    Forget Password
-                  </a>
-                </div>
-                <div class="polelogpass  w-100 d-flex passwordl">
-                  <input class="w-100" type="password" id="password-input" placeholder="" name="password">
-                  <img src="/img/eyepass.svg" href="#" class="password-control">
-                </div>
-                <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
-                  onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
-                  onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
-
-                  LOG IN
-
-                  <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
-                </button>
-                <div class="answaccount d-flex justify-content-between align-items-center">
-                  <div class="lnansw">
-                  </div>
-                  <p>
-                    Don’t have account
-                  </p>
-                  <div class="lnansw">
-                  </div>
-                </div>
-                <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
-                  Create account
-                </button>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        
       </div>
     </div>
 
@@ -343,7 +352,7 @@
     </nav>
   </div>
 
-  <section class="fsc container d-flex justify-content-center align-items-center">
+  <section class="fsc container d-flex justify-content-center align-items-center position-relative">
 
     <div id="carouselExampleDark" class="carousel carousel-dark slide align-items-center">
       <div class="carousel-indicators">
@@ -353,9 +362,10 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
 
+        <div class="carousel-item active" data-bs-interval="10000">
           <div class="inflex justify-content-start">
+            
             <div class="carousel_text ">
               <div class="car_about d-flex align-items-center">
                 <div class="mline">
@@ -363,23 +373,69 @@
                 </div>
                 THE BEST PLACE TO PLAY
               </div>
+              
               <h3>Xbox Consoles</h3>
+              <img src="img/Image.png" class="hiddenimage d-block w-100" alt="...">
               <p style="margin-bottom: 24px;">Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2
                 USD.</p>
-              <a href="#" class="shopnowm align-items-center">
+              <a href="#" class="shopnowm align-items-center w-100">
                 <p>SHOP NOW</p>
                 <img src="/img/ArrowRigthWhite.svg" alt="row" />
               </a>
             </div>
-            <img src="img/Image.png" class="d-block w-100" alt="...">
+            <img src="img/Image.png" class=" defimagee d-block w-100" alt="...">
           </div>
-
-
-
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-
           <div class="inflex justify-content-start">
+            
+            <div class="carousel_text ">
+              <div class="car_about d-flex align-items-center">
+                <div class="mline">
+
+                </div>
+                THE BEST PLACE TO PLAY
+              </div>
+              <h3>Xbox Consoles</h3>
+              <img src="img/Image.png" class="hiddenimage d-block w-100" alt="...">
+              
+              <p style="margin-bottom: 24px;">Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2
+                USD.</p>
+              <a href="#" class="shopnowm align-items-center w-100">
+                <p>SHOP NOW</p>
+                <img src="/img/ArrowRigthWhite.svg" alt="row" />
+              </a>
+            </div>
+            <img src="img/Image.png" class=" defimagee d-block w-100" alt="...">
+          </div>
+        </div>
+        <div class="carousel-item" >
+          <div class="inflex justify-content-start">
+            
+            <div class="carousel_text ">
+              <div class="car_about d-flex align-items-center">
+                <div class="mline">
+
+                </div>
+                THE BEST PLACE TO PLAY
+              </div>
+              <h3>Xbox Consoles</h3>
+              <img src="img/Image.png" class="hiddenimage d-block w-100 " alt="...">
+              
+              <p style="margin-bottom: 24px;">Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2
+                USD.</p>
+              <a href="#" class="shopnowm align-items-center w-100">
+                <p>SHOP NOW</p>
+                <img src="/img/ArrowRigthWhite.svg" alt="row" />
+              </a>
+            </div>
+            <img src="img/Image.png" class=" defimagee d-block w-100" alt="...">
+          </div>
+        </div>
+<!--
+      <div class="carousel-item" data-bs-interval="2000">
+          <div class="inflex justify-content-start">
+            <img src="img/xbox11.png" class="hiddenimage d-block w-70" style="width: 40% !important;" alt="...">
             <div class="carousel_text ">
               <div class="car_about d-flex align-items-center">
                 <div class="mline">
@@ -395,13 +451,13 @@
                 <img src="/img/ArrowRigthWhite.svg" alt="row" />
               </a>
             </div>
-            <img src="img/xbox11.png" class="d-block w-70" style="width: 40% !important;" alt="...">
+            <img src="img/xbox11.png" class="defimagee d-block w-70" style="width: 40% !important;" alt="...">
           </div>
-
         </div>
-        <div class="carousel-item">
 
+        <div class="carousel-item">
           <div class="inflex justify-content-start">
+            <img src="img/ps5.png" class="hiddenimage d-block w-100" alt="...">
             <div class="carousel_text ">
               <div class="car_about d-flex align-items-center">
                 <div class="mline">
@@ -417,10 +473,11 @@
                 <img src="/img/ArrowRigthWhite.svg" alt="row" />
               </a>
             </div>
-            <img src="img/ps5.png" class="d-block w-100" alt="...">
+            <img src="img/ps5.png" class=" defimagee d-block w-100" alt="...">
           </div>
-
         </div>
+-->
+        
 
       </div>
 
@@ -967,32 +1024,37 @@
 
 
   <section class="featuredProd container">
-    <div class="offer d-flex flex-column  ">
-      <div class="textoffer">
-        <p>
-          COMPUTER & ACCESSORIES
-        </p>
-        <h5 class="align-items-center">
-          32% Discount
-        </h5>
-        <p>
-          For all ellectronics products
-        </p>
-      </div>
-      <div class="endoffer d-flex align-items-center">
-        <p>
-          Offers ends in:
-        </p>
-        <div class="ends">
+    <div class="offer d-flex flex-column">
+
+      <div class="aligh-items-center justify-content-center d-flex flex-column">
+        <div class="textoffer">
           <p>
-            ENDS OF CHRISTMAS
+            COMPUTER & ACCESSORIES
+          </p>
+          <h5 class="align-items-center">
+            32% Discount
+          </h5>
+          <p>
+            For all ellectronics products
           </p>
         </div>
+        <div class="endoffer d-flex align-items-center">
+          <p>
+            Offers ends in:
+          </p>
+          <div class="ends">
+            <p>
+              ENDS OF CHRISTMAS
+            </p>
+          </div>
+        </div>
+        <a href="#" class="shopnowm align-items-center shopofferfeqatured">
+          <p>SHOP NOW</p>
+          <img src="/img/ArrowRigthWhite.svg" alt="row" />
+        </a>
       </div>
-      <a href="#" class="shopnowm align-items-center shopofferfeqatured">
-        <p>SHOP NOW</p>
-        <img src="/img/ArrowRigthWhite.svg" alt="row" />
-      </a>
+
+      
       <img src="/img/featured.jpg" alt="">
     </div>
     <div class="feat d-flex flex-column">
