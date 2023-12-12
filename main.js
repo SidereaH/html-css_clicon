@@ -31,7 +31,7 @@ function unhoverprof(element) {
     element.setAttribute('src', "/img/User.svg");
 }
 function hoverb(element, img) {
-    element.setAttribute('src', img );
+    element.setAttribute('src', img);
 }
 function hovershopitog(whatch, img) {
     whatch.setAttribute('src', img)
@@ -39,70 +39,67 @@ function hovershopitog(whatch, img) {
 function hovershopitogoff(whatch, img) {
     whatch.setAttribute('src', img)
 }
-function hoveradd (button, element, img , color){
+function hoveradd(button, element, img, color) {
     button.setAttribute('style', color,)
     button.firstElementChild.setAttribute('src', img)
     //element.setAttribute('src', img );
 }
 function show(pip) {
     var sigma = pip.firstElementChild
-    sigma.lastElementChild.setAttribute('style' , 'visibility: visible;')
+    sigma.lastElementChild.setAttribute('style', 'visibility: visible;')
 }
 function unshow(pip) {
     var sigma = pip.firstElementChild
-    sigma.lastElementChild.setAttribute('style' , 'visibility: hidden;')
+    sigma.lastElementChild.setAttribute('style', 'visibility: hidden;')
 }
 $('#btndr').click(function () {
 
     document.getElementById('btndr').classList.toggle("activebut");
     document.getElementById('caret').classList.toggle("activeimg")
-    
+
 });
 function myFunction(div) {
     document.getElementById(div).classList.toggle("show");
-    /*
+
     document.getElementById('manlike').classList.remove('like');
     document.getElementById('englike').classList.remove('like');
     document.getElementById('rulike').classList.remove('like');
     document.getElementById('usdlike').classList.remove('like');
     document.getElementById('eurlike').classList.remove('like');
-    if(document.getElementById(div) == firstdrop ){
+    if (document.getElementById(div) == firstdrop) {
         seconddrop.classList.remove('show')
         thirddrop.classList.remove('show')
         fourthdrop.classList.remove('show')
     }
-    else if(document.getElementById(div) == seconddrop)
-    {
+    else if (document.getElementById(div) == seconddrop) {
         firstdrop.classList.remove('show')
         thirddrop.classList.remove('show')
         fourthdrop.classList.remove('show')
     }
-    else if(document.getElementById(div) == thirddrop)
-    {
+    else if (document.getElementById(div) == thirddrop) {
         firstdrop.classList.remove('show')
         seconddrop.classList.remove('show')
         fourthdrop.classList.remove('show')
     }
-    else if(document.getElementById(div) == fourthdrop)
-    {
+    else if (document.getElementById(div) == fourthdrop) {
         firstdrop.classList.remove('show')
         seconddrop.classList.remove('show')
         thirddrop.classList.remove('show')
     }
-    */
+
 
 }
 function myFunctionCat(div) {
-    
+
     document.getElementById(div).classList.toggle("show");
-    
+
     document.getElementById('manlike').classList.remove('like');
     document.getElementById('englike').classList.remove('like');
     document.getElementById('rulike').classList.remove('like');
     document.getElementById('usdlike').classList.remove('like');
     document.getElementById('eurlike').classList.remove('like');
-   
-    
+
+
 
 }
 document.addEventListener('keydown', (e) => {
@@ -115,8 +112,8 @@ document.addEventListener('keydown', (e) => {
         document.getElementById('rulike').classList.remove('like');
         document.getElementById('usdlike').classList.remove('like');
         document.getElementById('eurlike').classList.remove('like');
-        
-        
+
+
     }
 });
 
@@ -124,7 +121,7 @@ document.addEventListener('keydown', (e) => {
 /*$( ".checkdrop" ).click(function() {
     $( ".js-click" ).css('background', 'green');
   });*/
-  function rulike() {
+function rulike() {
     //var button_name = clickedElement.textContent;
     document.getElementById('rulike').classList.add('like');
     document.getElementById('namebut').textContent = "Ru";
@@ -185,12 +182,6 @@ function eur() {
     }
 }
 
-
-
-
-
-
-
 function hideDiv(div, btn) {
     // hide the blackfriday div
     document.getElementById(div).style.display = 'none';
@@ -215,33 +206,33 @@ else if ( document.querySelector('#man')) {
 }
     */
 
-$(function() {
+$(function () {
     let header = $('.mainone');
-     
-    $(window).scroll(function() {
-      if($(this).scrollTop() > 1) {
-       header.addClass('header_fixed');
-      } else {
-       header.removeClass('header_fixed');
-      }
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
+            header.addClass('header_fixed');
+        } else {
+            header.removeClass('header_fixed');
+        }
     });
-   });
-   
-   $('body').on('click', '.password-control', function(){
-	if ($('#password-input').attr('type') == 'password'){
-		$(this).addClass('view');
-		$('#password-input').attr('type', 'text');
-	} else {
-		$(this).removeClass('view');
-		$('#password-input').attr('type', 'password');
-	}
-	return false;
+});
+
+$('body').on('click', '.password-control', function () {
+    if ($('#password-input').attr('type') == 'password') {
+        $(this).addClass('view');
+        $('#password-input').attr('type', 'text');
+    } else {
+        $(this).removeClass('view');
+        $('#password-input').attr('type', 'password');
+    }
+    return false;
 });
 
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
+    if (!menuOpen) {
         menuBtn.classList.add('open');
         menuOpen = true;
     } else {
@@ -252,7 +243,7 @@ menuBtn.addEventListener('click', () => {
 const menuBtn2 = document.querySelector('.menu-btn2');
 let menuOpen2 = false;
 menuBtn2.addEventListener('click', () => {
-    if(!menuOpen2) {
+    if (!menuOpen2) {
         menuBtn2.classList.add('open');
         menuOpen2 = true;
     } else {
