@@ -671,7 +671,7 @@
       </div>
       <div class="bDeals d-flex">
         <div class="row">
-          <div class="col-6 col-md-3">
+          <div class="collol col-12 col-sm-6 col-md-3">
             <div class="minicard" onmouseover="show(this)" onmouseout="unshow(this)">
               <div class="imgg">
                 <img src="/img/Image (3).png" alt="drone">
@@ -711,7 +711,7 @@
           </div>
 
 
-          <div class="col-6 col-md-3">
+          <div class="collol col-12 col-sm-6 col-md-3">
             <div class="minicard" onmouseover="show(this)" onmouseout="unshow(this)">
 
               <div class="imgg">
@@ -747,7 +747,7 @@
           </div>
 
 
-          <div class="col-6 col-md-3">
+          <div class="collol col-12 col-sm-6 col-md-3">
             <div class="minicard" onmouseover="show(this)" onmouseout="unshow(this)">
               <div class="imgg">
                 <img src="/img/gamepad.png" alt="gamepad">
@@ -788,7 +788,7 @@
 
 
 
-          <div class="col-6 col-md-3">
+          <div class="collol col-12 col-sm-6 col-md-3">
             <div class="minicard" onmouseover="show(this)" onmouseout="unshow(this)">
               <div class="imgg">
                 <img src="/img/headpnoe.png" alt="drone">
@@ -823,7 +823,7 @@
 
 
 
-          <div class="col-6 col-md-3">
+          <div class="collol col-12 col-sm-6 col-md-3">
             <div class="minicard" onmouseover="show(this)" onmouseout="unshow(this)">
               <div class="imgg">
                 <img src="/img/dell.png" alt="drone">
@@ -858,7 +858,7 @@
 
 
 
-          <div class="col-6 col-md-3">
+          <div class="collol col-12 col-sm-6 col-md-3">
             <div class="minicard" onmouseover="show(this)" onmouseout="unshow(this)">
               <div class="imgg">
                 <img src="/img/drone.png" alt="drone">
@@ -896,7 +896,7 @@
 
 
 
-          <div class="col-6 col-md-3">
+          <div class="collol col-12 col-sm-6 col-md-3">
             <div class="minicard" onmouseover="show(this)" onmouseout="unshow(this)">
               <div class="imgg">
                 <img src="/img/apple.png" alt="drone">
@@ -919,6 +919,10 @@
                     </button>
                   </div>
                 </div>
+
+              </div>
+              <div class="off hot">
+                <p>HOT</p>
               </div>
               <div class="minitextes d-flex justify-content-between flex-column h-100 ">
                 <p>
@@ -931,7 +935,7 @@
 
 
 
-          <div class="col-6 col-md-3">
+          <div class="collol col-12 col-sm-6 col-md-3">
             <div class="minicard" onmouseover="show(this)" onmouseout="unshow(this)">
               <div class="imgg">
                 <img src="/img/camerasource.png" alt="drone">
@@ -1068,7 +1072,7 @@
 
       <img src="/img/featured.jpg" alt="">
     </div>
-    <div class="feat d-flex flex-column">
+    <div class="feat d-flex flex-column aligh-items-center justify-content-center">
 
 
       <div class="navfeat d-flex align-items-center">
@@ -1098,129 +1102,411 @@
       </div>
       <div class="row d-flex justify-content-between featcards ">
         <!--карточка-->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card_fav">
-            <img src="/img/favphone.png" alt="">
-            <div class="text_fav">
-              <div class="rate_fav d-flex align-items-center">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <p>
-                  (536)
-                </p>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card_fav" onmouseover="show(this)" onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/Image (6).png" alt="">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
               </div>
-              <h6>
-                Samsung Electronics Samsung Galexy S21 5G
-              </h6>
+            </div>
+            <div class="off hot">
+              <p>HOT</p>
+            </div>
+            <div class="text_fav">
+              <div>
+                <div class="rate_fav d-flex align-items-center">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <p>
+                    (738)
+                  </p>
+                </div>
+                <h6>
+                  TOZO T6 True Wireless Earbuds Bluetooth Headphon...
+                </h6>
+              </div>
+              <p>$70</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card_fav " onmouseover="show(this)" onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/favphone.png" alt="">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+              <!--
+
+                
+              -->
+            </div>
+            <div class="text_fav">
+              <div>
+                <div class="rate_fav d-flex align-items-center">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <p>
+                    (536)
+                  </p>
+                </div>
+                <h6>
+                  Samsung Electronics Samsung Galexy S21 5G
+                </h6>
+              </div>
               <p>$2,300</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card_fav">
-            <img src="/img/favphone.png" alt="">
-            <div class="text_fav">
-              <div class="rate_fav d-flex align-items-center">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <p>
-                  (536)
-                </p>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card_fav" onmouseover="show(this)" onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/Image (7).png" alt="">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
               </div>
-              <h6>
-                Samsung Electronics Samsung Galexy S21 5G
-              </h6>
-              <p>$2,300</p>
+              <!--
+
+                
+              -->
+            </div>
+            <div class="off bestoff">
+              <p>
+                BEST DEALS
+              </p>
+            </div>
+            <div class="text_fav">
+              <div>
+                <div class="rate_fav d-flex align-items-center">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <p>
+                    (423)
+                  </p>
+                </div>
+                <h6>
+                  Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...
+                </h6>
+              </div>
+              <p>$360</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card_fav">
-            <img src="/img/favphone.png" alt="">
-            <div class="text_fav">
-              <div class="rate_fav d-flex align-items-center">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <p>
-                  (536)
-                </p>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card_fav" onmouseover="show(this)" onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/Image (8).png" alt="">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
               </div>
-              <h6>
-                Samsung Electronics Samsung Galexy S21 5G
-              </h6>
-              <p>$2,300</p>
+              <!--
+
+                
+              -->
+            </div>
+            <div class="text_fav">
+              <div>
+                <div class="rate_fav d-flex align-items-center">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/pustziro.svg" alt="">
+                  <p>
+                    (816)
+                  </p>
+                </div>
+                <h6>
+                  Portable Wshing Machine, 11lbs capacity Model 18NMF...
+                </h6>
+              </div>
+              <p>$80</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card_fav">
-            <img src="/img/favphone.png" alt="">
-            <div class="text_fav">
-              <div class="rate_fav d-flex align-items-center">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <p>
-                  (536)
-                </p>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card_fav" onmouseover="show(this)" onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/Image (9).png" alt="">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
               </div>
-              <h6>
-                Samsung Electronics Samsung Galexy S21 5G
-              </h6>
-              <p>$2,300</p>
+              <!--
+
+                
+              -->
+            </div>
+            <div class="text_fav">
+              <div>
+                <div class="rate_fav d-flex align-items-center">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <p>
+                    (647)
+                  </p>
+                </div>
+                <h6>
+                  Wired Over-Ear Gaming Headphones with USB
+                </h6>
+              </div>
+              <p>$1,500</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card_fav">
-            <img src="/img/favphone.png" alt="">
-            <div class="text_fav">
-              <div class="rate_fav d-flex align-items-center">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <p>
-                  (536)
-                </p>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card_fav" onmouseover="show(this)" onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/Image (10).png" alt="">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
               </div>
-              <h6>
-                Samsung Electronics Samsung Galexy S21 5G
-              </h6>
-              <p>$2,300</p>
+              <!--
+
+                
+              -->
+            </div>
+            <div class="off">
+              <p>
+                25% OFF
+              </p>
+            </div>
+            <div class="text_fav">
+              <div>
+                <div class="rate_fav d-flex align-items-center">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/pustziro.svg" alt="">
+                  <p>
+                    (877)
+                  </p>
+
+                </div>
+                <h6>
+                  Polaroid 57-Inch Photo/Video Tripod with Deluxe Tripod Ca...
+                </h6>
+
+              </div>
+
+              <div class="txtsale d-flex">
+                <p>$1600</p>
+                <p>$1200</p>
+              </div>
+
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card_fav">
-            <img src="/img/favphone.png" alt="">
-            <div class="text_fav">
-              <div class="rate_fav d-flex align-items-center">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <img src="/img/orangeStar.svg" alt="">
-                <p>
-                  (536)
-                </p>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card_fav" onmouseover="show(this)" onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/Image (12).png" alt="">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
               </div>
-              <h6>
-                Samsung Electronics Samsung Galexy S21 5G
-              </h6>
-              <p>$2,300</p>
+              <!--
+
+                
+              -->
+            </div>
+
+            <div class="text_fav">
+              <div>
+                <div class="rate_fav d-flex align-items-center">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <p>
+                    (426)
+                  </p>
+                </div>
+                <h6>
+                  Dell Optiplex 7000x7480 All-in-One Computer Monitor
+                </h6>
+              </div>
+
+              <p>$250</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card_fav" onmouseover="show(this)" onmouseout="unshow(this)">
+            <div class="imgg">
+              <img src="/img/Image (14).png" alt="">
+              <div class="buttonOnImg">
+                <div class="buttons">
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd1'), '/img/heartmin.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd1'), '/img/heartminDef.svg' , 'background-color: var(--gray-00, #FFF) ;');">
+                    <img src="/img/heartminDef.svg" alt="addToFavourite" id="imgadd1">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasketWhite.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd2'), '/img/addToWastebasket.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/addToWastebasket.svg" alt="addToWastebask" id="imgadd2">
+                  </button>
+                  <button class="addto"
+                    onmouseover="hoveradd(this, document.getElementById('imgadd3'), '/img/eyeFill.svg','background-color: var(--primary-500, #FA8232);');"
+                    onmouseout="hoveradd(this, document.getElementById('imgadd3'), '/img/eye.svg' , 'background-color: var(--gray-00, #FFF);');">
+                    <img src="/img/eye.svg" alt="addToSaw" id="imgadd3">
+                  </button>
+                </div>
+              </div>
+              <!--
+
+
+              -->
+            </div>
+            <div class="off saleoff">
+              <p>
+                SALE
+              </p>
+            </div>
+            <div class="text_fav">
+              <div>
+                <div class="rate_fav d-flex align-items-center">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <img src="/img/orangeStar.svg" alt="">
+                  <p>
+                    (583)
+                  </p>
+                </div>
+                <h6>
+                  4K UHD LED Smart TV with Chromecast Built-in
+                </h6>
+              </div>
+
+              <p>$220</p>
             </div>
           </div>
         </div>
@@ -1336,10 +1622,10 @@
           </div>
         </div>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (15).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              Simple Mobile 4G LTE Prepaid Smartphone
             </h6>
             <p>
               $1,500
@@ -1347,10 +1633,10 @@
           </div>
         </div>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (16).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              4K UHD LED Smart TV with Chromecast Built-in
             </h6>
             <p>
               $1,500
@@ -1360,12 +1646,12 @@
 
       </div>
       <div class="catdeal d-flex align-items-start flex-column col-12 col-md-6 col-lg-3">
-        <h4>FLASH SALE TODAY</h4>
+        <h4>BEST SELLERS</h4>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (17).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              Samsung Electronics Samsung Galexy S21 5G
             </h6>
             <p>
               $1,500
@@ -1373,10 +1659,10 @@
           </div>
         </div>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (18).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              Simple Mobile 5G LTE Galexy 12 Mini 512GB Gaming Phone  
             </h6>
             <p>
               $1,500
@@ -1384,10 +1670,10 @@
           </div>
         </div>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (19).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              Sony DSCHX8 High Zoom Point & Shoot Camera
             </h6>
             <p>
               $1,500
@@ -1398,12 +1684,12 @@
       </div>
 
       <div class="catdeal d-flex align-items-start flex-column col-12 col-md-6 col-lg-3 ">
-        <h4>FLASH SALE TODAY</h4>
+        <h4>TOP RATED</h4>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (20).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              Portable Wshing Machine, 11lbs capacity Model...
             </h6>
             <p>
               $1,500
@@ -1411,21 +1697,21 @@
           </div>
         </div>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (21).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
-            </h6>
+              Sony DSCHX8 High Zoom Point & Shoot Camera
+               </h6>
             <p>
               $1,500
             </p>
           </div>
         </div>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (22).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              Dell Optiplex 7000x7480 All-in-One Computer 
             </h6>
             <p>
               $1,500
@@ -1436,12 +1722,12 @@
       </div>
       <div class="catdeal d-flex align-items-start flex-column col-12 col-md-6 col-lg-3">
 
-        <h4>FLASH SALE TODAY</h4>
+        <h4>NEW ARRIVAL</h4>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (23).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              TOZO T6 True Wireless Earbuds Bluetooth Headpho...
             </h6>
             <p>
               $1,500
@@ -1449,10 +1735,10 @@
           </div>
         </div>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (24).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              JBL FLIP 4 - Waterproof Portable Bluetooth Speaker...
             </h6>
             <p>
               $1,500
@@ -1460,10 +1746,10 @@
           </div>
         </div>
         <div class="catdealcont d-flex align-items-center">
-          <img src="/img/cameraman.png" alt="">
+          <img src="/img/Image (25).png" alt="">
           <div class="dealcont">
             <h6>
-              Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...
+              Wyze Cam Pan v2 1080p Pan/Tilt/Zoom Wi-Fi Indoor Smar...
             </h6>
             <p>
               $1,500
@@ -1502,32 +1788,31 @@
           </button>
         </div>
         <div class="new">
-          <img src="/img/unsplash_iZVrfElG1t0.png" alt="">
+          <img src="/img/unsplash_FO7JIlwjOtU.png" alt="">
           <div class="newdes d-flex align-items-center justify-content-between">
             <div class="people align-items-center d-flex justidy-content-center"><img src="/img/UserCircle.svg" alt="">
-              <p>Kristin</p>
+              <p>Robert</p>
             </div>
             <div class="datepostal align-items-center d-flex justidy-content-center"><img src="/img/CalendarBlank.svg"
                 alt="">
-              <p>9 May, 2014</p>
+              <p>28 Nov, 2015</p>
             </div>
             <div class="comm align-items-center d-flex justidy-content-center"><img src="/img/comm.svg" alt="">
-              <p>826</p>
+              <p>738</p>
             </div>
           </div>
-          <h6>Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.</h6>
-          <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus
-            posuere metus.</p>
+          <h6>Curabitur pulvinar aliquam lectus, non blandit erat mattis vitae. </h6>
+          <p>Mauris scelerisque odio id rutrum volutpat. Pellentesque urna odio, vulputate at tortor vitae, hendrerit blandit lorem odio id rutrum tortor hendrerit. </p>
           <button class="readmore d-flex aligh-items-center">
             <p>READ MORE</p>
             <img src="/img/arrrrr.svg" alt="">
           </button>
         </div>
         <div class="new">
-          <img src="/img/unsplash_iZVrfElG1t0.png" alt="">
+          <img src="/img/unsplash_6MNmDi1hc_Y.png" alt="">
           <div class="newdes d-flex align-items-center justify-content-between">
             <div class="people align-items-center d-flex justidy-content-center"><img src="/img/UserCircle.svg" alt="">
-              <p>Kristin</p>
+              <p>Arlene</p>
             </div>
             <div class="datepostal align-items-center d-flex justidy-content-center"><img src="/img/CalendarBlank.svg"
                 alt="">
@@ -1537,9 +1822,8 @@
               <p>826</p>
             </div>
           </div>
-          <h6>Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.</h6>
-          <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus
-            posuere metus.</p>
+          <h6>Curabitur massa orci, consectetur et blandit ac, auctor et tellus.</h6>
+          <p>Pellentesque vestibulum lorem vel gravida aliquam. Morbi porta, odio id suscipit mattis, risus augue condimentum purus lorem odio id rutrum tortor hendrerit.</p>
           <button class="readmore d-flex aligh-items-center">
             <p>READ MORE</p>
             <img src="/img/arrrrr.svg" alt="">
