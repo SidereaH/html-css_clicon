@@ -2051,7 +2051,13 @@ h5 {
   margin-bottom: 16px;
 }
 
-.catdeal {}
+.catdeal {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .dealcont {
   padding: 12px;
@@ -2661,7 +2667,11 @@ footer .accessoriesd:hover {
   display: none;
   visibility: hidden;
 }
+.imgwtfsale {
+  top: 25px;
+  right: 25%;
 
+}
 @media (max-width:354px) {
   .action {
     visibility: hidden;
@@ -2782,6 +2792,43 @@ footer .accessoriesd:hover {
   .widesalecircle{
     padding: 33px 16px 33px 16px;
   }
+  .promp {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .prom {
+    justify-content: center !important;
+
+  }
+  .leftpartprom {
+    width: 100%;
+  }
+  .prompp {
+    justify-content: end !important;
+    align-items: end !important;
+  }
+  .leftpartprom h5{
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .cardimg {
+    position:relative !important
+  }
+  .rigtp {
+    height: 566px;
+    justify-content: flex-end;
+    align-items: end !important;
+  }
+  .intr {
+    max-width: 228px !important;
+    width: 100% !important;
+    z-index: 2;
+  }
+  .ppll {
+    align-items: center !important;
+    justify-content: flex-end !important;
+  }
 }
 @media (max-width: 800px) {
   #access {
@@ -2867,6 +2914,11 @@ footer .accessoriesd:hover {
   .feat .row>* {
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width:870px ){
+  .footcont {
+    flex-direction: column;
   }
 }
 
@@ -2973,6 +3025,15 @@ footer .accessoriesd:hover {
   }
 }
 
+@media (max-width:509px){
+  .rigtp {
+    
+
+  }
+  .prom {
+  
+  }
+}
 @media (max-width: 550px) {
   .Containblack {
     flex-direction: column;
