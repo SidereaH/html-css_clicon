@@ -2794,7 +2794,7 @@ footer .accessoriesd:hover {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  
+
   text-decoration: line-through;
   text-decoration-color: var(--gray-400, #929FA5);
   margin-right: 4px;
@@ -3402,4 +3402,104 @@ h2 {
     margin: 14px 18px;
   }
 
+}
+
+.activenav p {
+  color: var(--primary-500, #FA8232) !important;
+}
+
+.waycont>* {
+  margin-right: 8px;
+}
+
+.waycont p {
+  color: var(--gray-600, #5F6C72);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.activeway p {
+  color: var(--secondary-500, #2DA5F3);
+}
+
+.wayindex {
+  height: 72px;
+  background: var(--gray-50, #F2F4F5);
+}
+
+.trackmain {
+  padding-top: 48px;
+  padding-bottom: 124px;
+}
+
+.trackmain h2 {
+  text-align: start;
+  color: var(--gray-900, #191C1F);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.trackmain p {
+  color: var(--gray-600, #5F6C72);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.trackmain h5 {
+  color: var(--gray-900, #191C1F);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.trackstring {
+  max-width: 424px;
+  width: 100%;
+
+}
+
+.tracksearch {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid var(--gray-100, #E4E7E9);
+  background: var(--gray-00, #FFF);
+  box-shadow: none;
+}
+
+.inputstrack {
+  max-width: 872px;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.infotrack img {
+  margin-right: 6px;
+}
+
+.infotrack p {
+  font-size: 14px;
+}
+.infotrack {
+  margin-bottom: 32px;
+}
+.tracknow{
+  max-width: 217px;
+  height: 56px;
+}
+.tracknow img{
+  margin-left: 12px;
+}
+.tracknow p{
+  color: var(--gray-00, #FFF);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0.192px;
+  text-transform: uppercase;
 }
