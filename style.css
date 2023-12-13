@@ -3485,21 +3485,315 @@ h2 {
 .infotrack p {
   font-size: 14px;
 }
+
 .infotrack {
   margin-bottom: 32px;
 }
-.tracknow{
+
+.tracknow {
   max-width: 217px;
   height: 56px;
 }
-.tracknow img{
+
+.tracknow img {
   margin-left: 12px;
 }
-.tracknow p{
+
+.tracknow p {
   color: var(--gray-00, #FFF);
   font-size: 16px;
   font-weight: 700;
   line-height: 56px;
   letter-spacing: 0.192px;
   text-transform: uppercase;
+}
+
+@media (max-width:890px) {
+  .inputstrack {
+    flex-direction: column !important;
+  }
+
+  .ordertrack {
+    margin-bottom: 8px;
+  }
+}
+
+.rowthorughthelife {
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray-100, #E4E7E9);
+}
+
+.details {
+  max-width: 984px;
+  justify-content: normal;
+  border: 1px solid var(--gray-100, #E4E7E9);
+  background: var(--gray-00, #FFF);
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.details.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.orderidinfo>* {
+  margin-right: 8px;
+}
+
+.orderidinfo p {
+  color: var(--gray-700, #475156);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.orderiddetail h4 {
+  color: var(--gray-900, #191C1F);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.orderinfodetail {
+  width: 100%;
+  align-items: center;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.ordercost {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ordercost p {
+  color: var(--secondary-500, #2DA5F3);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.orderidwaycost {
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--warning-200, #F7E99E);
+  background: var(--warning-50, #FDFAE7);
+  width: 100%;
+}
+
+.orderinfodetail>* {
+  margin-bottom: 24px;
+}
+
+.arrivalorder p:first-child {
+  color: var(--gray-700, #475156);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: 3.7px;
+}
+
+.arrivalorder p:last-child {
+  color: var(--gray-900, #191C1F);
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: 1px;
+}
+
+.orangecircletrack {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-500, #FA8232);
+  border-radius: 1000px;
+  z-index: 2;
+}
+
+.orangerow {
+  width: 214px;
+  height: 8px;
+  border-radius: 100px;
+  background-color: var(--primary-500, #FA8232);
+  margin-left: -8px;
+}
+
+.now {
+  border: 2px solid var(--gray-00, #FFF);
+
+  margin-left: -8px;
+  z-index: 2;
+}
+
+.uncheckrow {
+  background: var(--primary-100, #FFE7D6);
+}
+
+.uncheckcircle {
+  border: 2px solid var(--primary-500, #FA8232);
+  background-color: var(--gray-00, #FFF);
+  margin-left: -8px;
+}
+
+.aboutwaysteps {
+  max-width: 766px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ready p {
+  color: var(--gray-900, #191C1F);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.unready p {
+  color: #8C8E8F;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.step img {
+  margin-bottom: 12px;
+}
+
+.circleandrowswayapadt {
+  display: none;
+}
+
+.aboutway {
+  width: 100%;
+}
+
+.me-5 {
+  margin-right: 24px !important;
+}
+
+.aabb {
+  max-height: 726px;
+  height: 100%;
+}
+
+.orderactivity h5 {
+  color: var(--gray-900, #191C1F);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+.orderactivity {
+  padding: 24px;
+}
+
+.activeimgtrack {
+  border-radius: 2px;
+  border: 1px solid var(--secondary-100, #D5EDFD);
+  background: var(--secondary-50, #EAF6FE);
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.done {
+  background: var(--success-50, #EAF7E9) !important;
+  border: 1px solid var(--success-100, #D5F0D3) !important;
+}
+
+.aboutactivity p:first-child {
+  color: var(--gray-900, #191C1F);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.aboutactivity p:last-child {
+  color: var(--gray-500, #77878F);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.active {
+  margin-bottom: 16px;
+}
+.orderactivity .active:last-child{
+  margin-bottom: 0px;
+}
+@media(max-width:794px) {
+  .aboutway {
+    display: none !important;
+  }
+
+  .circleandrowsway {
+    display: none !important;
+  }
+
+  .circleandrowswayapadt {
+    display: flex;
+  }
+
+  .orangerow {
+    height: 214px;
+    width: 8px;
+    border-radius: 100px;
+    background-color: var(--primary-500, #FA8232);
+    margin-top: -8px;
+    margin-left: 0px;
+  }
+
+  .uncheckcircle {
+    border: 2px solid var(--primary-500, #FA8232);
+    background-color: var(--gray-00, #FFF);
+    margin-top: -8px;
+    margin-left: 0px;
+  }
+
+  .now {
+    margin-left: 0px;
+    margin-top: -8px;
+  }
+
+  .aboutwaysteps {
+    max-height: 726px;
+    height: 100%;
+  }
+
+  .aboutwaysteps>* {
+    margin-bottom: 159px;
+  }
+
+  .aboutwaysteps .step:last-child {
+    margin-bottom: 0px;
+  }
+}
+@media(max-width:589px){
+  .orderidwaycost {
+    flex-direction: column;
+  }
+  .ordercost{
+    align-items: start;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+}
+@media(max-width:468px){
+  .orderidinfo{
+    flex-direction: column;
+  }
 }
