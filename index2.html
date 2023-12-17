@@ -2,658 +2,623 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLICON</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="/img/Icon.svg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLICON</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="/img/Icon.svg" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="aboutUs align-items-center">
-            <div class="aboutInfo">
-                <p>
-                    Welcome to Clicon online eCommerce store.
-                </p>
-                <div class="socAndEng">
-                    <div class="socialMedia">
-                        <p>Follow us:</p>
-                        <a href="#"><img src="/img/Twitter.svg" alt=""></a>
-                        <a href="https://facebook.com"><img src="/img/Facebook.svg" alt=""></a>
-                        <a href="https://ru.pinterest.com"><img src="/img/Pinterest.svg" alt=""></a>
-                        <a href="https://reddit.com"><img src="/img/Reddit.svg" alt=""></a>
-                        <a href="https://youtube.com"><img src="/img/Youtube.svg" alt=""></a>
-                        <a href="https://instagram.com"><img src="/img/" alt=""></a>
-                    </div>
-                    <div class="line">
-
-                    </div>
-                    <!--<button class="btn2" id="btn2" onclick="toggleDropdown()">
+  <header>
+    <div class="aboutUs align-items-center">
+      <div class="aboutInfo">
+        <p>
+          Welcome to Clicon online eCommerce store.
+        </p>
+        <div class="socAndEng">
+          <div class="socialMedia">
+            <p>Follow us:</p>
+            <a href="#"><img src="/img/Twitter.svg" alt=""></a>
+            <a href="https://facebook.com"><img src="/img/Facebook.svg" alt=""></a>
+            <a href="https://ru.pinterest.com"><img src="/img/Pinterest.svg" alt=""></a>
+            <a href="https://reddit.com"><img src="/img/Reddit.svg" alt=""></a>
+            <a href="https://youtube.com"><img src="/img/Youtube.svg" alt=""></a>
+            <a href="https://instagram.com"><img src="/img/" alt=""></a>
+          </div>
+          <div class="line">
+          </div>
+          <div class="dropdownx">
+            <button class="dropbtn" id="btn2" onclick="myFunction('myDropdown')">
+              <p id="namebut">
                 Eng
-                <img src="/img/CaretDown.svg" alt="" id="arrow" class="">
-              </button>
-              <div class="dropdown" id="dropdown">
-                <a href="#" class="">
-                  
-                  <p>Eng</p>
-                </a>
-                <a href="#"class="">
-                  
-                  <p>Russian</p>
-                </a>
-                <a href="#"class="">
-                  <img src="" alt="">
-                  <p>French</p>
-                </a>
-               
-              </div>
-            -->
-                    <div class="dropdownx">
-                        <button class="dropbtn" id="btn2" onclick="myFunction('myDropdown')">
-                            <p id="namebut">
-                                Eng
-                            </p>
-                            <img src="/img/CaretDown.svg" alt="" id="arrow" class="">
+              </p>
+              <img src="/img/CaretDown.svg" alt="" id="arrow" class="">
+            </button>
+            <div class="dropdownb" id="myDropdown">
+              <a class="checkdrop" href="#create" id="eng" onclick="englike()">
+                <img src="/img/Ellipse 10.svg" alt="">
+                English
 
-                        </button>
-
-                        <div class="dropdownb" id="myDropdown">
-                            <a class="checkdrop" href="#create" id="eng" onclick="englike()">
-                                <img src="/img/Ellipse 10.svg" alt="">
-                                English
-
-                                <img src="/img/Vector.svg" alt="" id="englike" class="imagelike">
-                            </a>
-                            <a class="checkdrop" href="#draft" id="man" onclick="manlike()">
-                                <img src="/img/man.png" alt="">
-                                Mandarin
-
-                                <img src="/img/Vector.svg" alt="" id="manlike" class="imagelike">
-                            </a>
-                            <a class="checkdrop" href="#move" id="ru" onclick="rulike()">
-                                <img src="/img/ru.svg" alt="">
-                                Russian
-                                <img src="/img/Vector.svg" alt="" id="rulike" class="imagelike">
-                            </a>
-
-                        </div>
-                    </div>
-
-
-                    <div class="dropdownusd">
-                        <button class="dropbtn2" id="btnusd" onclick="myFunction('myDropdown2')">
-                            <p id="namebut2">
-                                USD
-                            </p>
-                            <img src="/img/CaretDown.svg" alt="" id="arrow" class="">
-
-                        </button>
-                        <div class="dropdown2" id="myDropdown2">
-                            <a class="checkdrop2" href="#create" id="usd" onclick="usd()">
-
-                                Dollar (USD)
-
-                                <img src="/img/Vector.svg" alt="" id="usdlike" class="imagelike">
-                            </a>
-                            <a class="checkdrop2" href="#draft" id="eur" onclick="eur()">
-
-                                Euro (EUR)
-
-                                <img src="/img/Vector.svg" alt="" id="eurlike" class="imagelike">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mainone d-flex w-100 justify-content-center">
-            <div class="mainheader align-items-center flex-column position-relative">
-                <div class="d-flex w-100 justify-content-between">
-                    <a class="logo" href="index.html">
-                        <img src="/img/Icon.svg" alt="iconclickon">
-                        <h2>CLICON</h2>
-                    </a>
-                    <div class="searchdiv mainsearch">
-                        <input class="search" type="text" id="searcher" placeholder="Search for anything..."
-                            name="searcher">
-                        <a href="#">
-                            <img src="/img/MagnifyingGlass.svg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="menu-btn2" onclick="myFunction('action')">
-                        <div class="menu-btn__burger2">
-                        </div>
-                    </div>
-
-                    <div class="action" id="action">
-                        <div class="wastebasket" onmouseover="hoverplace(document.getElementById('place'))"
-                            onmouseout="unhoverplace(document.getElementById('place'))"
-                            onclick="myFunction('shopcart')">
-                            <img id="place" src="/img/place.svg" alt="">
-                            <img src="/img/krap.svg " alt="">
-                            <img src="/img/krap.svg" alt="">
-                            <div class="circle">
-                                <p>
-                                    2
-                                </p>
-                            </div>
-                            <div class="shopcart" id="shopcart">
-                                <div class="namezagol">
-                                    <div class="nametext">
-                                        <p>Shopping Cart </p>
-                                        <p>(02)</p>
-                                    </div>
-                                </div>
-
-                                <div class="purchases">
-                                    <div class="purch" id="p1">
-                                        <img src="/img/camera.png" alt="camera" class="camera">
-                                        <div class="descpurch">
-                                            <p>Canon EOS 1500D DSLR Camera Body+ 18-55 mm</p>
-                                            <div class="costpurch">
-                                                <p>1 x</p>
-                                                <p>$1,500</p>
-                                            </div>
-                                        </div>
-                                        <div><button class="delete" onclick="hideDiv('p1', this)"><img src="/img/X.svg"
-                                                    alt=""></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="purchases">
-                                    <div class="purch" id="p2">
-                                        <img src="/img/Image (5).png" alt="headphone" class="camera">
-                                        <div class="descpurch">
-                                            <p>Simple Mobile 5G LTE Galexy 12 Mini 512GB Gaming Phone</p>
-                                            <div class="costpurch">
-                                                <p>2 x</p>
-                                                <p>$269</p>
-                                            </div>
-                                        </div>
-                                        <div><button class="delete" onclick="hideDiv('p2', this)"><img src="/img/X.svg"
-                                                    alt=""></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="itogo">
-                                    <div class="itogoprice d-flex justify-content-between w-100">
-                                        <p>Sub-Total</p>
-                                        <p>$2038.00 USD</p>
-                                    </div>
-                                    <button
-                                        class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
-                                        onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
-                                        onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
-
-                                        CHECKOUT NOW
-
-                                        <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
-                                    </button>
-                                    <button
-                                        class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
-                                        View cart
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="index4.html">
-                          <button><img id="my-img" src="/img/Heart.svg" onmouseover="hover(this);" onmouseout="unhover(this);"
-                              alt="favourite"></button>
-                        </a>
-                        <div class="authoriz position-relative">
-                            <button onclick="myFunction('log')"><img src="/img/User.svg" onmouseover="hoverprof(this);"
-                                    onmouseout="unhoverprof(this);" alt="profile "></button>
-
-                            <div class="logIn" id="log">
-                                <h3>
-                                    Sign in to your account
-                                </h3>
-                                <div class="logpass w-100 d-flex flex-column">
-                                    <p>
-                                        Email Address
-                                    </p>
-                                    <div class="polelogpass w-100 align-items-center d-flex justify-content-center">
-                                        <input class="w-100" type="text" id="searcher" placeholder="" name="searcher">
-                                    </div>
-                                    <div class="pass d-flex w-100 justify-content-between">
-                                        <p>
-                                            Password
-                                        </p>
-                                        <a href="#">
-                                            Forget Password
-                                        </a>
-                                    </div>
-                                    <div class="polelogpass  w-100 d-flex passwordl">
-                                        <input class="w-100" type="password" id="password-input" placeholder=""
-                                            name="password">
-                                        <img src="/img/eyepass.svg" href="#" class="password-control">
-                                    </div>
-                                    <button
-                                        class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
-                                        onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
-                                        onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
-
-                                        LOG IN
-
-                                        <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
-                                    </button>
-                                    <div class="answaccount d-flex justify-content-between align-items-center">
-                                        <div class="lnansw">
-                                        </div>
-                                        <p>
-                                            Don’t have account
-                                        </p>
-                                        <div class="lnansw">
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
-                                        Create account
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="searchdiv adaptationhide">
-                    <input class="search" type="text" id="searcher" placeholder="Search for anything..."
-                        name="searcher">
-                    <a href="#">
-                        <img src="/img/MagnifyingGlass.svg" alt="">
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-    </header>
-    <div class="navigation">
-        <nav class="container position-relative">
-            <div class="menu-btn" onclick="myFunction('hidenav')">
-                <div class="menu-btn__burger">
-
-                </div>
-            </div>
-            <div class="hidenav d-flex justify-content-between " id="hidenav">
-                <div class="navbut ">
-                    <div class="allCat">
-                        <button class="drpdwn" id="btndr" onclick="myFunction('cat')">
-                            All Category
-                            <div id="caret" class="defimage"></div>
-                        </button>
-                        <div class="dropdowncateg" id="cat">
-                            <a href="#" id="a1" onmouseover="hovercat(a1)" onmouseout="unhovercat(a1)">Computer & Laptop
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Computer Accessories
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">SmartPhone
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Headphone
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Mobile Accessories
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Gaming Console
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Camera & Photo
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">TV & Homes
-                                Accessories
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Watchs & Accessories
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">GPS & Navigation
-                                <img src="" alt="">
-                            </a>
-                            <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Warable Technology
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <a class="nav_item activenav" href="index2.html">
-                        <img src="/img/orangetack.svg" alt="">
-                        <p>Track Order</p>
-                    </a>
-                    <a class="nav_item" href="#">
-                        <img src="/img/ArrowsCounterClockwise.svg" alt="">
-                        <p>Compare</p>
-                    </a>
-                    <a class="nav_item" href="#">
-                        <img src="/img/Headphones.svg" alt="">
-                        <p> Customer Support</p>
-                    </a>
-                    <a class="nav_item" href="#">
-                        <img src="/img/Info.svg" alt="">
-                        <p>Need Help</p>
-                    </a>
-
-                </div>
-                <div class="phonenum align-items-center d-flex">
-                    <img src="/img/phone.svg" alt="">
-                    <p> +1-202-555-0104</p>
-                </div>
-            </div>
-
-        </nav>
-    </div>
-    <div class="wayindex w-100 d-flex align-items-center justify-content-center flex-column">
-        <div class="container d-flex justify-content-start align-items-center">
-            <div class="waycont d-flex align-items-center">
-                <a href="index.html">
-                    <img src="/img/homeway.svg" alt="home">
-                </a>
-
-                <a href="index.html">
-                    <p>
-                        Home
-                    </p>
-                </a>
-                <img src="/img/caretrightgray.svg" alt="">
-                <a href="#">
-                    <p>
-                        Pages
-                    </p>
-                </a>
-                <img src="/img/caretrightgray.svg" alt="">
-                <a class="activeway" href="index2.html">
-                    <p>
-                        Track Order
-                    </p>
-                </a>
-                
-            </div>
-        </div>
-    </div>
-    <main>
-        <div class="container d-flex flex-column justify-content-start trackmain">
-            <h2>
-                Track Order
-            </h2>
-            <p>
-                To track your order please enter your order ID in the input field below and press the “Track Order”
-                button. this was given to you on your receipt and in the confirmation email you should have received.
-            </p>
-            <div class="inputstrack d-flex justify-content-between">
-                <div class="ordertrack trackstring d-flex justify-content-start flex-column">
-                    <h5>
-                        Order ID
-                    </h5>
-                    <div class="searchdiv tracksearch">
-
-                        <input class="search" type="text" id="searcher" placeholder="ID..." name="searcher">
-
-                    </div>
-                </div>
-                <div class="ordertrack d-flex justify-content-start flex-column trackstring">
-                    <h5>
-                        Billing Email
-                    </h5>
-                    <div class="searchdiv  tracksearch">
-                        <input class="search" type="text" id="searcher" placeholder="Email address" name="searcher">
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="infotrack d-flex align-items-center justify-content-start">
-                <img src="/img/infogray.svg" alt="info">
-                <p>
-                    Order ID that we sended to your in your email address.
-                </p>
-            </div>
-            <a href="index3.html" class="shopnowm align-items-center w-100 tracknow">
-                <p>Track Order</p>
-                <img src="/img/ArrowRigthWhite.svg" alt="row" />
+                <img src="/img/Vector.svg" alt="" id="englike" class="imagelike">
               </a>
-        </div>
-    </main>
-    <footer>
-        <div class="footcont container justify-content-between">
-    
-          <div class="column">
-            <div class="logo">
-              <img src="/img/Icon copy.svg" alt="iconclickon">
-              <h2>CLICON</h2>
+              <a class="checkdrop" href="#draft" id="man" onclick="manlike()">
+                <img src="/img/man.png" alt="">
+                Mandarin
+
+                <img src="/img/Vector.svg" alt="" id="manlike" class="imagelike">
+              </a>
+              <a class="checkdrop" href="#move" id="ru" onclick="rulike()">
+                <img src="/img/ru.svg" alt="">
+                Russian
+                <img src="/img/Vector.svg" alt="" id="rulike" class="imagelike">
+              </a>
             </div>
-            <h6>
-              Customer Supports:
-            </h6>
-            <h3>(629) 555-0129</h3>
-            <h5>4517 Washington Ave. Manchester, Kentucky 39495</h5>
-            <h4>info@kinbo.com</h4>
           </div>
-    
-          <div class="column">
-            <h4>
-              TOP CATEGORY
-            </h4>
-            <a href="" class="accessoriesd align-items-center" onmouseover="show(this)" onmouseout="unshow(this)">
-              <div class="accline" style="visibility: hidden;">
-              </div>
-              <h6>
-                Computer & Laptop
-              </h6>
+          <div class="dropdownusd">
+            <button class="dropbtn2" id="btnusd" onclick="myFunction('myDropdown2')">
+              <p id="namebut2">
+                USD
+              </p>
+              <img src="/img/CaretDown.svg" alt="" id="arrow" class="">
+
+            </button>
+            <div class="dropdown2" id="myDropdown2">
+              <a class="checkdrop2" href="#create" id="usd" onclick="usd()">
+
+                Dollar (USD)
+
+                <img src="/img/Vector.svg" alt="" id="usdlike" class="imagelike">
+              </a>
+              <a class="checkdrop2" href="#draft" id="eur" onclick="eur()">
+
+                Euro (EUR)
+
+                <img src="/img/Vector.svg" alt="" id="eurlike" class="imagelike">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainone d-flex w-100 justify-content-center">
+      <div class="mainheader align-items-center flex-column position-relative">
+        <div class="d-flex w-100 justify-content-between">
+          <a class="logo" href="index.html">
+            <img src="/img/Icon.svg" alt="iconclickon">
+            <h2>CLICON</h2>
+          </a>
+          <div class="searchdiv mainsearch">
+            <input class="search" type="text" id="searcher" placeholder="Search for anything..." name="searcher">
+            <a href="#">
+              <img src="/img/MagnifyingGlass.svg" alt="">
             </a>
-            <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
+          </div>
+
+          <div class="menu-btn2" onclick="myFunction('action')">
+            <div class="menu-btn__burger2">
+            </div>
+          </div>
+
+          <div class="action" id="action">
+            <div class="wastebasket" onmouseover="hoverplace(document.getElementById('place'))"
+              onmouseout="unhoverplace(document.getElementById('place'))" onclick="myFunction('shopcart')">
+              <img id="place" src="/img/place.svg" alt="">
+              <img src="/img/krap.svg " alt="">
+              <img src="/img/krap.svg" alt="">
+              <div class="circle">
+                <p>
+                  2
+                </p>
               </div>
-              <h6>
-                SmartPhone
-              </h6>
+              <div class="shopcart" id="shopcart">
+                <div class="namezagol">
+                  <div class="nametext">
+                    <p>Shopping Cart </p>
+                    <p>(02)</p>
+                  </div>
+                </div>
+
+                <div class="purchases">
+                  <div class="purch" id="p1">
+                    <img src="/img/camera.png" alt="camera" class="camera">
+                    <div class="descpurch">
+                      <p>Canon EOS 1500D DSLR Camera Body+ 18-55 mm</p>
+                      <div class="costpurch">
+                        <p>1 x</p>
+                        <p>$1,500</p>
+                      </div>
+                    </div>
+                    <div><button class="delete" onclick="hideDiv('p1', this)"><img src="/img/X.svg" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="purchases">
+                  <div class="purch" id="p2">
+                    <img src="/img/Image (5).png" alt="headphone" class="camera">
+                    <div class="descpurch">
+                      <p>Simple Mobile 5G LTE Galexy 12 Mini 512GB Gaming Phone</p>
+                      <div class="costpurch">
+                        <p>2 x</p>
+                        <p>$269</p>
+                      </div>
+                    </div>
+                    <div><button class="delete" onclick="hideDiv('p2', this)"><img src="/img/X.svg" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="itogo">
+                  <div class="itogoprice d-flex justify-content-between w-100">
+                    <p>Sub-Total</p>
+                    <p>$2038.00 USD</p>
+                  </div>
+                  <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
+                    onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
+                    onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
+
+                    CHECKOUT NOW
+
+                    <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
+                  </button>
+                  <a href="index5.html"><button
+                    class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
+                    View cart
+                </button></a>
+                </div>
+              </div>
+            </div>
+            <a href="index4.html">
+              <button><img id="my-img" src="/img/Heart.svg" onmouseover="hover(this);" onmouseout="unhover(this);"
+                  alt="favourite"></button>
             </a>
-            <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
+            <div class="authoriz position-relative">
+              <button onclick="myFunction('log')"><img src="/img/User.svg" onmouseover="hoverprof(this);"
+                  onmouseout="unhoverprof(this);" alt="profile "></button>
+
+              <div class="logIn" id="log">
+                <h3>
+                  Sign in to your account
+                </h3>
+                <div class="logpass w-100 d-flex flex-column">
+                  <p>
+                    Email Address
+                  </p>
+                  <div class="polelogpass w-100 align-items-center d-flex justify-content-center">
+                    <input class="w-100" type="text" id="searcher" placeholder="" name="searcher">
+                  </div>
+                  <div class="pass d-flex w-100 justify-content-between">
+                    <p>
+                      Password
+                    </p>
+                    <a href="#">
+                      Forget Password
+                    </a>
+                  </div>
+                  <div class="polelogpass  w-100 d-flex passwordl">
+                    <input class="w-100" type="password" id="password-input" placeholder="" name="password">
+                    <img src="/img/eyepass.svg" href="#" class="password-control">
+                  </div>
+                  <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center"
+                    onmouseover="hovershopitog(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrrrr.svg')"
+                    onmouseout="hovershopitogoff(document.getElementById('kakgeponyat`etotlastchildnodejs'), '/img/arrow-right.svg')">
+
+                    LOG IN
+
+                    <img src="/img/arrow-right.svg" alt="" id="kakgeponyat`etotlastchildnodejs">
+                  </button>
+                  <div class="answaccount d-flex justify-content-between align-items-center">
+                    <div class="lnansw">
+                    </div>
+                    <p>
+                      Don’t have account
+                    </p>
+                    <div class="lnansw">
+                    </div>
+                  </div>
+                  <button class="shopbut checkout w-100 d-flex justify-content-center align-items-center">
+                    Create account
+                  </button>
+                </div>
               </div>
-              <h6>
-                Headphone
-              </h6>
-            </a>
-            <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
-              </div>
-              <h6>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="searchdiv adaptationhide">
+          <input class="search" type="text" id="searcher" placeholder="Search for anything..." name="searcher">
+          <a href="#">
+            <img src="/img/MagnifyingGlass.svg" alt="">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <div class="navigation">
+    <nav class="container position-relative">
+      <div class="menu-btn" onclick="myFunction('hidenav')">
+        <div class="menu-btn__burger">
+
+        </div>
+      </div>
+      <div class="hidenav d-flex justify-content-between " id="hidenav">
+        <div class="navbut ">
+          <div class="allCat">
+            <button class="drpdwn" id="btndr" onclick="myFunction('cat')">
+              All Category
+              <div id="caret" class="defimage"></div>
+            </button>
+            <div class="dropdowncateg" id="cat">
+              <a href="#" id="a1" onmouseover="hovercat(a1)" onmouseout="unhovercat(a1)">Computer & Laptop
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Computer Accessories
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">SmartPhone
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Headphone
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Mobile Accessories
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Gaming Console
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Camera & Photo
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">TV & Homes
                 Accessories
-              </h6>
-            </a>
-            <a href="" class="accessoriesd align-items-center " onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
-              </div>
-              <h6>
-                Camera & Photo
-              </h6>
-            </a>
-            <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
-              </div>
-              <h6>
-                TV & Homes
-              </h6>
-            </a>
-            <!--browsealladd-->
-            <a href="#" class="browse-all d-flex align-items-center justidy-content-center ">
-              <p class="align-items-center">Browse All Product</p><img src="/img/yellowarrow.svg" alt="">
-            </a>
-          </div>
-          <div class="column">
-            <h4>
-              QUICK LINKS
-            </h4>
-            <a href="" class="accessoriesd align-items-center" onmouseover="show(this)" onmouseout="unshow(this)">
-              <div class="accline" style="visibility: hidden;">
-              </div>
-              <h6>
-                Shop Product
-              </h6>
-            </a>
-            <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
-              </div>
-              <h6>
-                Shopping Cart
-              </h6>
-            </a>
-            <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
-                Wishlist
-              </div>
-              <h6>
-                Compare
-              </h6>
-            </a>
-            <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
-              </div>
-              <h6>
-                Track Order
-              </h6>
-            </a>
-            <a href="" class="accessoriesd align-items-center " onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
-              </div>
-              <h6>
-                Customer Help
-              </h6>
-            </a>
-            <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
-              <div class="accline" style="visibility: hidden;">
-              </div>
-              <h6>
-                About Us
-              </h6>
-            </a>
-          </div>
-          <div class="column downd">
-            <h4>DOWNLOAD APP</h4>
-            <button class="download d-flex">
-              <img src="/img/Icon=google-play 1.svg" alt="">
-              <div class="downloadtext">
-                <p>
-                  Get it now
-                </p>
-                <h6>
-                  Google Play
-                </h6>
-              </div>
-            </button>
-            <button class="download  d-flex">
-              <img src="/img/Apple---Negative 1.svg" alt="">
-              <div class="downloadtext d-flex flex-column">
-                <p>
-                  Get it now
-                </p>
-                <h6>
-                  Apple Store
-                </h6>
-              </div>
-            </button>
-          </div>
-          <div class="column d-flex justidy-content-start flex-column">
-            <h4>Popular Tag</h4>
-            <div class="poprowd-flex justify-content-start d-flex flex-wrap ">
-    
-              <button class="popcol">
-                <p>
-                  Game
-                </p>
-              </button>
-              <button class="popcol">
-                <p>
-                  Iphone
-                </p>
-              </button>
-    
-    
-              <button class="popcol">
-                <p>
-                  TV
-                </p>
-              </button>
-              <button class="popcol">
-                <p>
-                  Asus Laptops
-                </p>
-              </button>
-              <button class="popcol">
-                <p>
-                  Macbook
-                </p>
-              </button>
-              <button class="popcol">
-                <p>
-                  SSD
-                </p>
-              </button>
-              <button class="popcol">
-                <p>
-                  Graphics Card
-                </p>
-    
-                <button class="popcol">
-                  <p>
-                    Power Bank
-                  </p>
-                </button>
-                <button class="popcol">
-                  <p>
-                    Smart TV
-                  </p>
-                </button>
-                <button class="popcol">
-                  <p>
-                    Speaker
-                  </p>
-                </button>
-                <button class="popcol">
-                  <p>
-                    Tablet
-                  </p>
-                </button>
-                <button class="popcol">
-                  <p>
-                    Microwave
-                  </p>
-                </button>
-                <button class="popcol">
-                  <p>
-                    Samsung
-                  </p>
-                </button>
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Watchs & Accessories
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">GPS & Navigation
+                <img src="" alt="">
+              </a>
+              <a href="#" onmouseover="hovercat(this)" onmouseout="unhovercat(this)">Warable Technology
+                <img src="" alt="">
+              </a>
             </div>
           </div>
+          <a class="nav_item activenav" href="index2.html">
+            <img src="/img/orangetack.svg" alt="">
+            <p>Track Order</p>
+          </a>
+          <a class="nav_item" href="#">
+            <img src="/img/ArrowsCounterClockwise.svg" alt="">
+            <p>Compare</p>
+          </a>
+          <a class="nav_item" href="#">
+            <img src="/img/Headphones.svg" alt="">
+            <p> Customer Support</p>
+          </a>
+          <a class="nav_item" href="#">
+            <img src="/img/Info.svg" alt="">
+            <p>Need Help</p>
+          </a>
+
         </div>
-        <div class="allrights">
+        <div class="phonenum align-items-center d-flex">
+          <img src="/img/phone.svg" alt="">
+          <p> +1-202-555-0104</p>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+  <div class="wayindex w-100 d-flex align-items-center justify-content-center flex-column">
+    <div class="container d-flex justify-content-start align-items-center">
+      <div class="waycont d-flex align-items-center">
+        <a href="index.html">
+          <img src="/img/homeway.svg" alt="home">
+        </a>
+
+        <a href="index.html">
+          <p>
+            Home
+          </p>
+        </a>
+        <img src="/img/caretrightgray.svg" alt="">
+        <a href="#">
+          <p>
+            Pages
+          </p>
+        </a>
+        <img src="/img/caretrightgray.svg" alt="">
+        <a class="activeway" href="index2.html">
+          <p>
+            Track Order
+          </p>
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="container d-flex flex-column justify-content-start trackmain">
+      <h2>
+        Track Order
+      </h2>
+      <p>
+        To track your order please enter your order ID in the input field below and press the “Track Order”
+        button. this was given to you on your receipt and in the confirmation email you should have received.
+      </p>
+      <div class="inputstrack d-flex justify-content-between">
+        <div class="ordertrack trackstring d-flex justify-content-start flex-column">
+          <h5>
+            Order ID
+          </h5>
+          <div class="searchdiv tracksearch">
+
+            <input class="search" type="text" id="searcher" placeholder="ID..." name="searcher">
+
+          </div>
+        </div>
+        <div class="ordertrack d-flex justify-content-start flex-column trackstring">
+          <h5>
+            Billing Email
+          </h5>
+          <div class="searchdiv  tracksearch">
+            <input class="search" type="text" id="searcher" placeholder="Email address" name="searcher">
+
+          </div>
+        </div>
+
+      </div>
+      <div class="infotrack d-flex align-items-center justify-content-start">
+        <img src="/img/infogray.svg" alt="info">
+        <p>
+          Order ID that we sended to your in your email address.
+        </p>
+      </div>
+      <a href="index3.html" class="shopnowm align-items-center w-100 tracknow">
+        <p>Track Order</p>
+        <img src="/img/ArrowRigthWhite.svg" alt="row" />
+      </a>
+    </div>
+  </main>
+  <footer>
+    <div class="footcont container justify-content-between">
+
+      <div class="column">
+        <div class="logo">
+          <img src="/img/Icon copy.svg" alt="iconclickon">
+          <h2>CLICON</h2>
+        </div>
+        <h6>
+          Customer Supports:
+        </h6>
+        <h3>(629) 555-0129</h3>
+        <h5>4517 Washington Ave. Manchester, Kentucky 39495</h5>
+        <h4>info@kinbo.com</h4>
+      </div>
+
+      <div class="column">
+        <h4>
+          TOP CATEGORY
+        </h4>
+        <a href="" class="accessoriesd align-items-center" onmouseover="show(this)" onmouseout="unshow(this)">
+          <div class="accline" style="visibility: hidden;">
+          </div>
           <h6>
-            Kinbo - eCommerce Template © 2021. Design by Templatecookie
+            Computer & Laptop
           </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            SmartPhone
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Headphone
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Accessories
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center " onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Camera & Photo
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            TV & Homes
+          </h6>
+        </a>
+        <!--browsealladd-->
+        <a href="#" class="browse-all d-flex align-items-center justidy-content-center ">
+          <p class="align-items-center">Browse All Product</p><img src="/img/yellowarrow.svg" alt="">
+        </a>
+      </div>
+      <div class="column">
+        <h4>
+          QUICK LINKS
+        </h4>
+        <a href="" class="accessoriesd align-items-center" onmouseover="show(this)" onmouseout="unshow(this)">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Shop Product
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Shopping Cart
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+            Wishlist
+          </div>
+          <h6>
+            Compare
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Track Order
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center " onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            Customer Help
+          </h6>
+        </a>
+        <a href="" class="accessoriesd align-items-center" onmouseover="" onmouseout="">
+          <div class="accline" style="visibility: hidden;">
+          </div>
+          <h6>
+            About Us
+          </h6>
+        </a>
+      </div>
+      <div class="column downd">
+        <h4>DOWNLOAD APP</h4>
+        <button class="download d-flex">
+          <img src="/img/Icon=google-play 1.svg" alt="">
+          <div class="downloadtext">
+            <p>
+              Get it now
+            </p>
+            <h6>
+              Google Play
+            </h6>
+          </div>
+        </button>
+        <button class="download  d-flex">
+          <img src="/img/Apple---Negative 1.svg" alt="">
+          <div class="downloadtext d-flex flex-column">
+            <p>
+              Get it now
+            </p>
+            <h6>
+              Apple Store
+            </h6>
+          </div>
+        </button>
+      </div>
+      <div class="column d-flex justidy-content-start flex-column">
+        <h4>Popular Tag</h4>
+        <div class="poprowd-flex justify-content-start d-flex flex-wrap ">
+
+          <button class="popcol">
+            <p>
+              Game
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              Iphone
+            </p>
+          </button>
+
+
+          <button class="popcol">
+            <p>
+              TV
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              Asus Laptops
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              Macbook
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              SSD
+            </p>
+          </button>
+          <button class="popcol">
+            <p>
+              Graphics Card
+            </p>
+
+            <button class="popcol">
+              <p>
+                Power Bank
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Smart TV
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Speaker
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Tablet
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Microwave
+              </p>
+            </button>
+            <button class="popcol">
+              <p>
+                Samsung
+              </p>
+            </button>
         </div>
-      </footer>
+      </div>
+    </div>
+    <div class="allrights">
+      <h6>
+        Kinbo - eCommerce Template © 2021. Design by Templatecookie
+      </h6>
+    </div>
+  </footer>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
