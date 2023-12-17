@@ -3928,6 +3928,85 @@ h2 {
   margin-bottom: 16px;
 }
 
-.wishprod  .wishlistarr .wishlistarr:last-child {
+.wishprod .wishlistarr .wishlistarr:last-child {
   margin-bottom: 0px;
+}
+
+.outofstock {
+  color: var(--Danger-500, #EE5858) !important;
+}
+
+.outofstb {
+  background-color: var(--Gray-300, #ADB7BC) !important;
+}
+
+.hiddensectionwish {
+  display: none !important;
+}
+
+@media(max-width:857px) {
+  .hiddensectionwish {
+    display: block !important;
+  }
+
+  .sectionwishblock {
+    display: none !important;
+  }
+
+  .wishheading h6 {
+    max-width: 115px;
+    width: 100%;
+  }
+
+  .deskriptwish {
+    max-width: 115px;
+    width: 100%;
+  }
+
+  .wishprodimg {
+    flex-direction: column;
+    align-items: start;
+  }
+
+}
+
+@media(max-width:470px) {
+  .wishprod p {
+    font-size: 11px !important;
+  }
+
+  .pricew p:last-child {
+
+    font-size: 12px;
+  }
+
+  .pricew p:first-child {
+    font-size: 12px;
+  }
+
+  .deskriptwish .addToCart {
+    max-width: 120px;
+    height: 28px;
+  }
+
+  .deskriptwish .addToCart img {
+    width: 30%;
+  }
+
+  .deskriptwish .addToCart p {
+    margin-right: 2px;
+  }
+
+  .deskriptwish .addToCart {
+    margin-right: 2px;
+  }
+
+  .wishlistcont.container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .wishprod {
+    padding: 15px;
+  }
 }
