@@ -4010,3 +4010,70 @@ h2 {
     padding: 15px;
   }
 }
+
+.errordiv {
+  padding-top: 8px;
+  text-align: center;
+  padding-bottom: 124px;
+}
+
+.errorimg {
+  max-width: 500px;
+  width: 100%;
+}
+
+.errordiv h3 {
+  margin-bottom: 24px;
+}
+
+.buterror {
+  margin-top: 24px;
+  max-width: 325px;
+  width: 100%;
+}
+
+.eroorpage {
+  max-width: 141px;
+  height: 48px;
+  border-radius: 2px;
+  background: var(--Primary-500, #FA8232);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.eroorpage p {
+  color: var(--Gray-00, #FFF);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.168px;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+
+.whiteerr {
+  border-radius: 2px;
+  border: 2px solid var(--Primary-100, #FFE7D6);
+  background-color: #FFF;
+}
+
+.whiteerr p {
+  color: #FA8232;
+}
+
+.signcont {
+  max-width: 424px;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 1px solid var(--Gray-100, #E4E7E9);
+  background: var(--Gray-00, #FFF);
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.12);
+}
+
+.verification {
+  margin-top: 24px;
+}
